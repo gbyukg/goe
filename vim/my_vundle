@@ -1,6 +1,16 @@
 综合
+vimrc:
+syntax enable
+set background=dark
+colorscheme solarized
+git clone git://github.com/altercation/vim-colors-solarized.git
+https://github.com/altercation/solarized
+
 NERDTree
 https://github.com/scrooloose/nerdtree
+
+为nerdtree追加一些功能
+https://github.com/jistr/vim-nerdtree-tabs
 
 NERDTree-project
 https://github.com/vim-scripts/NERD_tree-Project
@@ -14,13 +24,13 @@ https://github.com/mileszs/ack.vim
 bclose 关闭buffer
 https://github.com/bcaccinolo/bclose
 
-matchit 更多语言d匹配(%)
+matchit 更多语言的匹配(%)
 https://github.com/vim-scripts/matchit.zip
 
 taglist
 https://github.com/vim-scripts/taglist.vim
 
-vimwiki
+vimwiki 通过vim编辑自己的wiki
 https://github.com/vim-scripts/vimwiki
 
 bufexplorer buffer管理
@@ -28,6 +38,50 @@ https://github.com/vim-scripts/bufexplorer.zip
 
 buffer小窗口
 https://github.com/JessicaKMcIntosh/TagmaBufMgr
+
+ctags
+https://github.com/vim-scripts/ctags.vim--Johnson
+
+utags 为c/c++ 提供更好的查找功能
+https://github.com/vim-scripts/utags
+
+tagfinder 通过tag生成项目文件信息后进行的类，方法等查找
+https://github.com/vim-scripts/tagfinder.vim
+
+为将当前文件的所有tag生成一个菜单
+https://github.com/vim-scripts/TagsMenu.zip
+
+非常强大的搜索工具，搜索文件名，tag，buffer...
+https://github.com/kien/ctrlp.vim
+
+代码autocomplete
+https://github.com/Valloric/YouCompleteMe
+
+各种语法检测
+https://github.com/scrooloose/syntastic
+
+自动完成一些语言中的代码，如for循环等
+https://github.com/msanders/snipmate.vim
+
+多光标插件，可同时多处地方，如为多个单词同时添加引号等
+https://github.com/terryma/vim-multiple-cursors
+
+可链接到远程服务器上的vim进行同步编辑工作 interesting!!!
+https://github.com/FredKSchott/CoVim
+
+另一个代码提示工具
+https://github.com/Shougo/neocomplcache.vim
+
+vim session  可以保存本次vim的各种布局和设定等信息，下次可直接打开该session
+https://github.com/xolox/vim-session
+
+注释工具
+https://github.com/tomtom/tcomment_vim
+
+对代码的嵌套一目了然
+https://github.com/nathanaelkane/vim-indent-guides
+
+
 
 
 
@@ -38,6 +92,14 @@ https://github.com/vim-scripts/HTML-AutoCloseTag
 autoclose 自动添加括号，引号等右半部分
 https://github.com/Townk/vim-autoclose
 
+HTML标签自动匹配高亮显示
+https://github.com/gregsexton/MatchTag
+
+json语法高亮
+https://github.com/elzr/vim-json
+
+
+
 
 
 PHP
@@ -45,9 +107,24 @@ PHP-CS-Fixer PHP样式检查
 https://github.com/fabpot/PHP-CS-Fixer
 
 
+
+
+
 C/C++
 
 
 
 
+
 git
+
+https://github.com/tpope/vim-fugitive
+
+git diff
+https://github.com/airblade/vim-gitgutter
+
+对gists进行操作
+https://github.com/mattn/gist-vim
+
+为vim提供git命令，使在vim内部直接使用git命令
+https://github.com/motemen/git-vim
