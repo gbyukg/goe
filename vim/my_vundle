@@ -106,6 +106,12 @@ PHP
 PHP-CS-Fixer PHP样式检查
 https://github.com/fabpot/PHP-CS-Fixer
 
+xdebug
+https://github.com/vim-scripts/Xdebug
+
+unite
+https://github.com/Shougo/unite.vim
+
 
 
 
