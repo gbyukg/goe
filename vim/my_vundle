@@ -6,6 +6,9 @@ colorscheme solarized
 git clone git://github.com/altercation/vim-colors-solarized.git
 https://github.com/altercation/solarized
 
+vim主题
+https://github.com/nanotech/jellybeans.vim
+
 NERDTree
 https://github.com/scrooloose/nerdtree
 
@@ -78,8 +81,35 @@ https://github.com/xolox/vim-session
 注释工具
 https://github.com/tomtom/tcomment_vim
 
+强大的注释工具
+https://github.com/scrooloose/nerdcommenter
+
 对代码的嵌套一目了然
 https://github.com/nathanaelkane/vim-indent-guides
+
+webapi 通过其他web页面提供的api获取web信息
+https://github.com/mattn/webapi-vim
+
+L9 一个vim脚本库，很多其他插件依赖于该库
+https://github.com/vim-scripts/L9
+
+vim窗口快速最大化、复原快捷键
+https://github.com/vim-scripts/ZoomWin
+
+打开一个空白的vim时，会显示最近打开的一些文件以及vim的session
+https://github.com/mhinz/vim-startify
+
+能够显示出所有通过vim改动过的文件
+https://github.com/mbbill/undotree
+
+为vim增加索搜功能，默认google
+https://github.com/g3orge/vim-voogle
+
+vim剪切板
+https://github.com/vim-scripts/YankRing.vim
+
+vim日历插件
+https://github.com/vim-scripts/calendar.vim--Matsumoto
 
 
 
@@ -97,6 +127,12 @@ https://github.com/gregsexton/MatchTag
 
 json语法高亮
 https://github.com/elzr/vim-json
+
+一个非常强大的颜色编辑、获取工具
+https://github.com/Rykka/colorv.vim
+
+html、css、js代码格式化工具
+https://github.com/maksimr/vim-jsbeautify
 
 
 
@@ -134,3 +170,9 @@ https://github.com/mattn/gist-vim
 
 为vim提供git命令，使在vim内部直接使用git命令
 https://github.com/motemen/git-vim
+
+git仓库下的文件改动后会自动在行号先显示相应d图标识出来
+https://github.com/airblade/vim-gitgutter
+
+在头文件.h和.c中来回跳转
+https://github.com/vim-scripts/a.vim
