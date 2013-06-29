@@ -36,7 +36,6 @@ https://github.com/vim-scripts/vimwiki
 minibuffer buffer超强小窗口
 https://github.com/fholgado/minibufexpl.vim
 
-
 " buffer小窗口
 " https://github.com/JessicaKMcIntosh/TagmaBufMgr
 
@@ -46,15 +45,14 @@ https://github.com/vim-scripts/bufexplorer.zip
 " bclose 关闭buffer
 " https://github.com/bcaccinolo/bclose
 
-ctags
-https://github.com/vim-scripts/ctags.vim--Johnson
+tagbar
+https://github.com/majutsushi/tagbar
 
+" ctags
+" https://github.com/vim-scripts/ctags.vim--Johnson
 
-taglist
-https://github.com/vim-scripts/taglist.vim
-
-utags 为c/c++ 提供更好的查找功能
-https://github.com/vim-scripts/utags
+" taglist
+" https://github.com/vim-scripts/taglist.vim
 
 tagfinder 通过tag生成项目文件信息后进行的类，方法等查找
 https://github.com/vim-scripts/tagfinder.vim
@@ -89,8 +87,8 @@ https://github.com/xolox/vim-session
 注释工具
 https://github.com/tomtom/tcomment_vim
 
-强大的注释工具
-https://github.com/scrooloose/nerdcommenter
+" 强大的注释工具
+" https://github.com/scrooloose/nerdcommenter
 
 对代码的嵌套一目了然
 https://github.com/nathanaelkane/vim-indent-guides
@@ -101,8 +99,8 @@ https://github.com/mattn/webapi-vim
 L9 一个vim脚本库，很多其他插件依赖于该库
 https://github.com/vim-scripts/L9
 
-vim窗口快速最大化、复原快捷键
-https://github.com/vim-scripts/ZoomWin
+" vim窗口快速最大化、复原快捷键
+" https://github.com/vim-scripts/ZoomWin
 
 打开一个空白的vim时，会显示最近打开的一些文件以及vim的session
 https://github.com/mhinz/vim-startify
@@ -118,6 +116,8 @@ https://github.com/vim-scripts/YankRing.vim
 
 vim日历插件
 https://github.com/vim-scripts/calendar.vim--Matsumoto
+
+https://github.com/tpope/vim-dispatch
 
 
 
@@ -161,6 +161,8 @@ https://github.com/Shougo/unite.vim
 
 
 C/C++
+utags 为c/c++ 提供更好的查找功能
+https://github.com/vim-scripts/utags
 
 
 
