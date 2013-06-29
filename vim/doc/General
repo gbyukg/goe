@@ -1,0 +1,4 @@
+matchit 更多语言的匹配(通过%，并不只针对引号和括号)
+https://github.com/vim-scripts/matchit.zip
+该插件丰富了%的匹配，不仅仅是针对引号和括号等，增加了对大部分语言的支持
+
