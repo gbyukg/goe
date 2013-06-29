@@ -1,4 +1,15 @@
+ctrl+a 自动为数字做加1处理
+
+:ColorV 打开颜色编辑器
+
 matchit 更多语言的匹配(通过%，并不只针对引号和括号)
 https://github.com/vim-scripts/matchit.zip
 该插件丰富了%的匹配，不仅仅是针对引号和括号等，增加了对大部分语言的支持
+
+
+
+打开空文件时自动显示最近打开的项目
+https://github.com/mhinz/vim-startify
+autocmd vimenter * if !argc() | Startify | endif
+
 
