@@ -38,3 +38,13 @@ map <C-n> :NERDTreeTabsToggle<CR>
 " 终端中打开vim时设定为显示树目录
 let g:nerdtree_tabs_open_on_console_startup=1
 
+nerdtree-execute
+https://github.com/ivalkeen/nerdtree-execute
+安装该插件后，通过m按键调出菜单栏，x键可以用系统默认的程序来执行当前所选的文件，如pdf、img等
+
+NERDTree-ack
+https://github.com/vim-scripts/nerdtree-ack
+为NERDTree增加项目文件搜索功能
+该插件通过在NERDTree中使用ack.vim来进行搜索
+在树目录中按下m键调出菜单栏
+输入s，在当前所在文件夹下通过关键字所有文件名或内容
