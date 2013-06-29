@@ -1,0 +1,17 @@
+ack 查找文件、内容利器
+https://github.com/mileszs/ack.vim
+
+需要系统安装ack(http://beyondgrep.com/)
+ubuntu:
+sudo apt-get install ack-grep
+
+格式
+:Ack [options] {pattern} [{directory}]
+在directory目录下进行搜索，默认为当前目录
+--type=TYPE
+在指定的文件类型中查找，如：
+--type=php 或--php
+--php --js 同时指定多个文件类型
+
+:AckAdd
+同ack一样，只是将搜索结果追加到当前结果集中
