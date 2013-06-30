@@ -20,4 +20,9 @@ https://github.com/nathanaelkane/vim-indent-guides
 vim的调用wei的库
 https://github.com/mattn/webapi-vim
 
+查看当前文件的修改历史记录，能够退到任何修改的状态
+https://github.com/mbbill/undotree
+
+ctrl 文件查找工具
+https://github.com/kien/ctrlp.vim
 
