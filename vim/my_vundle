@@ -48,38 +48,38 @@ https://github.com/vim-scripts/bufexplorer.zip
 tagbar
 https://github.com/majutsushi/tagbar
 
-" ctags
-" https://github.com/vim-scripts/ctags.vim--Johnson
+ctags
+https://github.com/vim-scripts/ctags.vim--Johnson
 
 " taglist
 " https://github.com/vim-scripts/taglist.vim
 
-tagfinder 通过tag生成项目文件信息后进行的类，方法等查找
-https://github.com/vim-scripts/tagfinder.vim
+" tagfinder 通过tag生成项目文件信息后进行的类，方法等查找
+" https://github.com/vim-scripts/tagfinder.vim
 
-为将当前文件的所有tag生成一个菜单
-https://github.com/vim-scripts/TagsMenu.zip
+" 为将当前文件的所有tag生成一个菜单
+" https://github.com/vim-scripts/TagsMenu.zip
 
 非常强大的搜索工具，搜索文件名，tag，buffer...
 https://github.com/kien/ctrlp.vim
 
-代码autocomplete
-https://github.com/Valloric/YouCompleteMe
+" 代码autocomplete
+" https://github.com/Valloric/YouCompleteMe
 
-各种语法检测
-https://github.com/scrooloose/syntastic
+" 各种语法检测
+" https://github.com/scrooloose/syntastic
 
-自动完成一些语言中的代码，如for循环等
-https://github.com/msanders/snipmate.vim
+" 自动完成一些语言中的代码，如for循环等
+" https://github.com/msanders/snipmate.vim
 
-多光标插件，可同时多处地方，如为多个单词同时添加引号等
-https://github.com/terryma/vim-multiple-cursors
+" 多光标插件，可同时多处地方，如为多个单词同时添加引号等
+" https://github.com/terryma/vim-multiple-cursors
 
 可链接到远程服务器上的vim进行同步编辑工作 interesting!!!
 https://github.com/FredKSchott/CoVim
 
-另一个代码提示工具
-https://github.com/Shougo/neocomplcache.vim
+" 另一个代码提示工具
+" https://github.com/Shougo/neocomplcache.vim
 
 vim session  可以保存本次vim的各种布局和设定等信息，下次可直接打开该session
 https://github.com/xolox/vim-session
@@ -98,6 +98,9 @@ https://github.com/mattn/webapi-vim
 
 L9 一个vim脚本库，很多其他插件依赖于该库
 https://github.com/vim-scripts/L9
+
+vim脚本库，很多插件使用该库
+https://github.com/xolox/vim-misc
 
 " vim窗口快速最大化、复原快捷键
 " https://github.com/vim-scripts/ZoomWin
@@ -165,24 +168,23 @@ utags 为c/c++ 提供更好的查找功能
 https://github.com/vim-scripts/utags
 
 
+在头文件.h和.c中来回跳转
+https://github.com/vim-scripts/a.vim
+
+
 
 
 
 git
-
+为vim提供git命令及相关界面
 https://github.com/tpope/vim-fugitive
-
-git diff
-https://github.com/airblade/vim-gitgutter
 
 对gists进行操作
 https://github.com/mattn/gist-vim
 
-为vim提供git命令，使在vim内部直接使用git命令
-https://github.com/motemen/git-vim
+" 为vim提供git命令，使在vim内部直接使用git命令
+" https://github.com/motemen/git-vim
 
 git仓库下的文件改动后会自动在行号先显示相应d图标识出来
 https://github.com/airblade/vim-gitgutter
 
-在头文件.h和.c中来回跳转
-https://github.com/vim-scripts/a.vim
