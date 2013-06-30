@@ -164,6 +164,9 @@ https://github.com/Shougo/unite.vim
 
 
 C/C++
+c.vim 打造c/c++编辑器
+https://github.com/vim-scripts/c.vim
+
 utags 为c/c++ 提供更好的查找功能
 https://github.com/vim-scripts/utags
 
