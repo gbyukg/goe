@@ -13,3 +13,11 @@ https://github.com/mhinz/vim-startify
 autocmd vimenter * if !argc() | Startify | endif
 
 
+代码层级显示
+https://github.com/nathanaelkane/vim-indent-guides
+<LEAD>ig 调出显示
+
+vim的调用wei的库
+https://github.com/mattn/webapi-vim
+
+
