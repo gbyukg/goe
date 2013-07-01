@@ -1,13 +1,8 @@
 " =======================================
-" Vim plugin configuration
+" vundle插件安装
 " ========================================
-"
-" This file contains the list of plugin installed using vundle plugin manager.
-" Once you've updated the list of plugin, you can run vundle update by issuing
-" the command :BundleInstall from within vim or directly invoking it from the
-" command line with the following syntax:
-" vim --noplugin -u vim/vundles.vim -N "+set hidden" "+syntax on" +BundleClean! +BundleInstall +qall
-" Filetype off is required by vundle
+
+" vundle需要开启
 filetype off
 
 set rtp+=~/.vim/bundle/vundle/
@@ -16,240 +11,15 @@ call vundle#rc()
 " let Vundle manage Vundle (required)
 Bundle "gmarik/vundle"
 
-" All your bundles here
 
-
-"===================================Ruby, Rails, Rake...================================================
-" Bundle "astashov/vim-ruby-debugger"
-" Bundle "ecomba/vim-ruby-refactoring"
-" Bundle "skwp/vim-ruby-conque"
-" Bundle "tpope/vim-rails.git"
-" Bundle "tpope/vim-rake.git"
-" Bundle "tpope/vim-rvm.git"
-" Bundle "vim-ruby/vim-ruby.git"
-" Bundle "vim-scripts/Specky.git"
-" https://github.com/tpope/vim-rvm
-" rvm
-" Bundle "tpope/vim-rvm.git"
-========================================================================================================
-
-
-"===================================Other languages=====================================================
-" https://github.com/briancollins/vim-jst
-" JST/EJS语法高亮
-Bundle "briancollins/vim-jst"
-
-" https://github.com/pangloss/vim-javascript
-" 
-Bundle "pangloss/vim-javascript"
-========================================================================================================
-
-
-"==================================Html, Xml, Css, Markdown...==========================================
-" https://github.com/aaronjensen/vim-sass-status
-" Lets you know your current css selector while navigating a sass file.
-Bundle "aaronjensen/vim-sass-status.git"
-
-" https://github.com/claco/jasmine.vim
-" jasmine插件，jasmine是一个js的测试框架
-" Bundle "claco/jasmine.vim"
-
-" https://github.com/digitaltoad/vim-jade
-" 为Jade templates提供语法高亮
-" Jade:https://github.com/visionmedia/jade 
-Bundle "digitaltoad/vim-jade.git"
-
-" https://github.com/groenewege/vim-less
-" 为less语言提供语法高亮，代码提示等功能
-" less是一种动态样式语言，可在客户端和服务器运行
-" less中文网站：http://www.lesscss.net/
-" Bundle "groenewege/vim-less.git"
-
-" https://github.com/itspriddle/vim-jquery
-" 为jquery提供高亮语法
-" 无配置
-Bundle "itspriddle/vim-jquery.git"
-
-" https://github.com/jtratner/vim-flavored-markdown
-" 为markdown文件提供语法高亮
-Bundle "jtratner/vim-flavored-markdown.git"
-
-" https://github.com/kchmck/vim-coffee-script
-" vim的CoffeeScript插件
-" Bundle "kchmck/vim-coffee-script"
-
-" https://github.com/kogakure/vim-sparkup
-" 类似zencoding的插件，用于快速生成HTML
-" Bundle "kogakure/vim-sparkup.git"
-
-" https://github.com/nelstrom/vim-markdown-preview
-" 为markdown文件提供预览，其预览效果同github中显示的效果一样
-Bundle "nelstrom/vim-markdown-preview"
-
-" https://github.com/skwp/vim-html-escape
-" <lead>he html转码，如<转成$lt；<lead>hu 反转码
-Bundle "skwp/vim-html-escape"
-
-" https://github.com/slim-template/vim-slim
-" 使vim支持slim
-" slim：https://github.com/slim-template/slim
-" Bundle "slim-template/vim-slim.git"
-
-" https://github.com/timcharper/textile.vim
-" 为textile文档提供支持
-"Bundle "timcharper/textile.vim.git"
-
-" https://github.com/tpope/vim-haml
-" 支持Haml, Sass, 和 SCSS
-Bundle "tpope/vim-haml"
-
-" https://github.com/wavded/vim-stylus
-" 为stylus提供高亮语法
-" stylus: http://learnboost.github.io/stylus/
-Bundle "wavded/vim-stylus"
-
-" https://github.com/vim-scripts/HTML-AutoCloseTag
-" HTML-Auto-close 自动添加html关闭标签
-Bundle "vim-scripts/HTML-AutoCloseTag"
-
-" https://github.com/gregsexton/MatchTag
-" HTML标签自动匹配高亮显示
-Bundle "gregsexton/MatchTag"
-
-" https://github.com/elzr/vim-json
-" json语法高亮
-Bundle "elzr/vim-json"
-========================================================================================================
-
-
-"================================================ Git ==================================================
-" Git related...
-" https://github.com/gregsexton/gitv
-" git库查看工具，nice！！！
-Bundle "gregsexton/gitv"
-
-" https://github.com/mattn/gist-vim
-" 用于创建gist
-Bundle "mattn/gist-vim"
-
-" https://github.com/skwp/vim-git-grep-rails-partial
-" 用于查看当前文件的所有引用信息
-Bundle "skwp/vim-git-grep-rails-partial"
-
-" https://github.com/tpope/vim-fugitive
-" 提供git命令
-Bundle "tpope/vim-fugitive"
-
-" https://github.com/airblade/vim-gitgutter
-" git仓库下的文件改动后会自动在行号先显示相应d图标识出来
-Bundle "airblade/vim-gitgutter"
-
-" Bundle "tpope/vim-git"
-" Bundle "tjennings/git-grep-vim"
-========================================================================================================
-
-
-"=============================== General text editing improvements... ==================================
-" https://github.com/Raimondi/delimitMate
-" 自动添加括号，引号等右半部分
-Bundle "Raimondi/delimitMate"
-
-
-" https://github.com/Townk/vim-autoclose
-" autoclose 自动添加括号，引号等右半部分
-" Bundle "Townk/vim-autoclose"
-
-" https://github.com/Shougo/neocomplcache.vim
-" 通过对当前文件的缓存，可对关键字提示
-Bundle "Shougo/neocomplcache.git"
-
-" https://github.com/briandoll/change-inside-surroundings.vim
-" 一个能够快速修改{}, (), "", ><, [], '', ``之间内容的插件
-Bundle "briandoll/change-inside-surroundings.vim.git"
-
-" https://github.com/godlygeek/tabular
-" 智能快速编辑对齐
-Bundle "godlygeek/tabular"
-
-
-" https://github.com/msanders/snipmate.vim
-" 自动完成一些语言中的代码，如for循环等
-" Bundle "garbas/vim-snipmate.git"
-
-" https://github.com/honza/vim-snippets
-" 自动完成一些语言中的代码，如if、for循环等，支持多种语言
-Bundle "honza/vim-snippets"
-
-" https://github.com/nelstrom/vim-visual-star-search
-" 在视图模式下通过选择一段文本，使用*或#在当前文件内进行搜索
-Bundle "nelstrom/vim-visual-star-search"
-
-" Bundle "skwp/vim-easymotion"
-" Bundle "vim-scripts/camelcasemotion.git"
-
-" https://github.com/tomtom/tcomment_vim
-" 注释工具
-Bundle "tomtom/tcomment_vim.git"
-
-Bundle "tpope/vim-bundler"
-
-" https://github.com/vim-scripts/IndexedSearch
-" 搜索工具
-" Bundle "vim-scripts/IndexedSearch"
-
-" https://github.com/vim-scripts/matchit.zip
-" 使%匹配更多的内容
-Bundle "vim-scripts/matchit.zip.git"
-
-" https://github.com/terryma/vim-multiple-cursors
-" 多鼠标，同时对多个地方做相同的修改，强大！！！
-Bundle "terryma/vim-multiple-cursors"
-
-" https://github.com/Rykka/colorv.vim
-" 一个非常强大的颜色编辑、获取工具
-Bundle "Rykka/colorv.vim"
-
-" https://github.com/vim-scripts/vimwiki
-" vimwiki 通过vim编辑自己的wiki
-Bundle "vim-scripts/vimwiki"
-
-" https://github.com/vim-scripts/bufexplorer.zip
-" bufexplorer buffer管理
-Bundle "vim-scripts/bufexplorer.zip"
-
-" https://github.com/fholgado/minibufexpl.vim
-" minibuffer buffer超强小窗口
-Bundle "fholgado/minibufexpl.vim"
-
-" https://github.com/xolox/vim-session
-" vim session  可以保存本次vim的各种布局和设定等信息，下次可直接打开该session
-Bundle "xolox/vim-session"
-
-" https://github.com/mhinz/vim-startify
-" 打开一个空白的vim时，会显示最近打开的一些文件以及vim的session
-Bundle "mhinz/vim-startify"
-
-" https://github.com/g3orge/vim-voogle
-" 为vim增加索搜功能，默认google
-Bundle "g3orge/vim-voogle"
-
-" https://github.com/vim-scripts/calendar.vim--Matsumoto
-" vim日历插件
-Bundle "vim-scripts/calendar.vim--Matsumoto"
-
-" https://github.com/FredKSchott/CoVim
-" 可链接到远程服务器上的vim进行同步编辑工作 interesting!!!
-"Bundle "FredKSchott/CoVim"
-
-========================================================================================================
-
-
-"============================================= General vim improvements ================================
+"============================================= 一般性插件 ================================
 " 插件库
 Bundle "vim-scripts/L9"
 Bundle "xolox/vim-misc"
 Bundle "AndrewRadev/splitjoin.vim"
 Bundle "tomtom/tlib_vim.git"
+
+Bundle "tpope/vim-bundler"
 
 " https://github.com/chrisbra/color_highlight
 " 根据颜色名字或颜色代码将名字或颜色上色
@@ -358,11 +128,228 @@ Bundle "vim-scripts/sudo.vim"
 " mark插件
 Bundle "xsunsmile/showmarks.git"
 
+" https://github.com/Raimondi/delimitMate
+" 自动添加括号，引号等右半部分
+Bundle "Raimondi/delimitMate"
+
+" https://github.com/Townk/vim-autoclose
+" autoclose 自动添加括号，引号等右半部分
+" Bundle "Townk/vim-autoclose"
+
+" https://github.com/Shougo/neocomplcache.vim
+" 通过对当前文件的缓存，可对关键字提示
+Bundle "Shougo/neocomplcache.git"
+
+" https://github.com/briandoll/change-inside-surroundings.vim
+" 一个能够快速修改{}, (), "", ><, [], '', ``之间内容的插件
+Bundle "briandoll/change-inside-surroundings.vim.git"
+
+" https://github.com/godlygeek/tabular
+" 智能快速编辑对齐
+Bundle "godlygeek/tabular"
+
+" https://github.com/msanders/snipmate.vim
+" 自动完成一些语言中的代码，如for循环等
+" Bundle "garbas/vim-snipmate.git"
+
+" https://github.com/honza/vim-snippets
+" 自动完成一些语言中的代码，如if、for循环等，支持多种语言
+Bundle "honza/vim-snippets"
+
+" https://github.com/nelstrom/vim-visual-star-search
+" 在视图模式下通过选择一段文本，使用*或#在当前文件内进行搜索
+Bundle "nelstrom/vim-visual-star-search"
+
+" Bundle "skwp/vim-easymotion"
+" Bundle "vim-scripts/camelcasemotion.git"
+
+" https://github.com/tomtom/tcomment_vim
+" 注释工具
+Bundle "tomtom/tcomment_vim.git"
+
+" https://github.com/vim-scripts/IndexedSearch
+" 搜索工具
+" Bundle "vim-scripts/IndexedSearch"
+
+" https://github.com/vim-scripts/matchit.zip
+" 使%匹配更多的内容
+Bundle "vim-scripts/matchit.zip.git"
+
+" https://github.com/terryma/vim-multiple-cursors
+" 多鼠标，同时对多个地方做相同的修改，强大！！！
+Bundle "terryma/vim-multiple-cursors"
+
+" https://github.com/Rykka/colorv.vim
+" 一个非常强大的颜色编辑、获取工具
+Bundle "Rykka/colorv.vim"
+
+" https://github.com/vim-scripts/vimwiki
+" vimwiki 通过vim编辑自己的wiki
+Bundle "vim-scripts/vimwiki"
+
+" https://github.com/vim-scripts/bufexplorer.zip
+" bufexplorer buffer管理
+Bundle "vim-scripts/bufexplorer.zip"
+
+" https://github.com/fholgado/minibufexpl.vim
+" minibuffer buffer超强小窗口
+Bundle "fholgado/minibufexpl.vim"
+
+" https://github.com/xolox/vim-session
+" vim session  可以保存本次vim的各种布局和设定等信息，下次可直接打开该session
+Bundle "xolox/vim-session"
+
+" https://github.com/mhinz/vim-startify
+" 打开一个空白的vim时，会显示最近打开的一些文件以及vim的session
+Bundle "mhinz/vim-startify"
+
+" https://github.com/g3orge/vim-voogle
+" 为vim增加索搜功能，默认google
+Bundle "g3orge/vim-voogle"
+
+" https://github.com/vim-scripts/calendar.vim--Matsumoto
+" vim日历插件
+Bundle "vim-scripts/calendar.vim--Matsumoto"
+
+" https://github.com/FredKSchott/CoVim
+" 可链接到远程服务器上的vim进行同步编辑工作 interesting!!!
+"Bundle "FredKSchott/CoVim"
+
 "Bundle "tpope/vim-abolish"
 "Bundle "tpope/vim-ragtag"
 "Bundle "vim-scripts/lastpos.vim"
 "Bundle "skwp/YankRing.vim"
 "Bundle "tpope/vim-repeat.git"
+========================================================================================================
+
+
+"==================================Html, Xml, Css, Markdown...==========================================
+" https://github.com/aaronjensen/vim-sass-status
+" Lets you know your current css selector while navigating a sass file.
+Bundle "aaronjensen/vim-sass-status.git"
+
+" https://github.com/claco/jasmine.vim
+" jasmine插件，jasmine是一个js的测试框架
+" Bundle "claco/jasmine.vim"
+
+" https://github.com/digitaltoad/vim-jade
+" 为Jade templates提供语法高亮
+" Jade:https://github.com/visionmedia/jade 
+Bundle "digitaltoad/vim-jade.git"
+
+" https://github.com/groenewege/vim-less
+" 为less语言提供语法高亮，代码提示等功能
+" less是一种动态样式语言，可在客户端和服务器运行
+" less中文网站：http://www.lesscss.net/
+" Bundle "groenewege/vim-less.git"
+
+" https://github.com/itspriddle/vim-jquery
+" 为jquery提供高亮语法
+" 无配置
+Bundle "itspriddle/vim-jquery.git"
+
+" https://github.com/jtratner/vim-flavored-markdown
+" 为markdown文件提供语法高亮
+Bundle "jtratner/vim-flavored-markdown.git"
+
+" https://github.com/kchmck/vim-coffee-script
+" vim的CoffeeScript插件
+" Bundle "kchmck/vim-coffee-script"
+
+" https://github.com/kogakure/vim-sparkup
+" 类似zencoding的插件，用于快速生成HTML
+" Bundle "kogakure/vim-sparkup.git"
+
+" https://github.com/nelstrom/vim-markdown-preview
+" 为markdown文件提供预览，其预览效果同github中显示的效果一样
+Bundle "nelstrom/vim-markdown-preview"
+
+" https://github.com/skwp/vim-html-escape
+" <lead>he html转码，如<转成$lt；<lead>hu 反转码
+Bundle "skwp/vim-html-escape"
+
+" https://github.com/slim-template/vim-slim
+" 使vim支持slim
+" slim：https://github.com/slim-template/slim
+" Bundle "slim-template/vim-slim.git"
+
+" https://github.com/timcharper/textile.vim
+" 为textile文档提供支持
+"Bundle "timcharper/textile.vim.git"
+
+" https://github.com/tpope/vim-haml
+" 支持Haml, Sass, 和 SCSS
+Bundle "tpope/vim-haml"
+
+" https://github.com/wavded/vim-stylus
+" 为stylus提供高亮语法
+" stylus: http://learnboost.github.io/stylus/
+Bundle "wavded/vim-stylus"
+
+" https://github.com/vim-scripts/HTML-AutoCloseTag
+" HTML-Auto-close 自动添加html关闭标签
+Bundle "vim-scripts/HTML-AutoCloseTag"
+
+" https://github.com/gregsexton/MatchTag
+" HTML标签自动匹配高亮显示
+Bundle "gregsexton/MatchTag"
+
+" https://github.com/elzr/vim-json
+" json语法高亮
+Bundle "elzr/vim-json"
+========================================================================================================
+
+
+"================================================ Git ==================================================
+" Git related...
+" https://github.com/gregsexton/gitv
+" git库查看工具，nice！！！
+Bundle "gregsexton/gitv"
+
+" https://github.com/mattn/gist-vim
+" 用于创建gist
+Bundle "mattn/gist-vim"
+
+" https://github.com/skwp/vim-git-grep-rails-partial
+" 用于查看当前文件的所有引用信息
+Bundle "skwp/vim-git-grep-rails-partial"
+
+" https://github.com/tpope/vim-fugitive
+" 提供git命令
+Bundle "tpope/vim-fugitive"
+
+" https://github.com/airblade/vim-gitgutter
+" git仓库下的文件改动后会自动在行号先显示相应d图标识出来
+Bundle "airblade/vim-gitgutter"
+
+" Bundle "tpope/vim-git"
+" Bundle "tjennings/git-grep-vim"
+========================================================================================================
+
+
+"===================================Ruby, Rails, Rake...================================================
+" Bundle "astashov/vim-ruby-debugger"
+" Bundle "ecomba/vim-ruby-refactoring"
+" Bundle "skwp/vim-ruby-conque"
+" Bundle "tpope/vim-rails.git"
+" Bundle "tpope/vim-rake.git"
+" Bundle "tpope/vim-rvm.git"
+" Bundle "vim-ruby/vim-ruby.git"
+" Bundle "vim-scripts/Specky.git"
+" https://github.com/tpope/vim-rvm
+" rvm
+" Bundle "tpope/vim-rvm.git"
+========================================================================================================
+
+
+"===================================Other languages=====================================================
+" https://github.com/briancollins/vim-jst
+" JST/EJS语法高亮
+Bundle "briancollins/vim-jst"
+
+" https://github.com/pangloss/vim-javascript
+" 
+Bundle "pangloss/vim-javascript"
 ========================================================================================================
 
 
@@ -400,3 +387,9 @@ Bundle "kana/vim-textobj-function"
 "Bundle "lucapette/vim-textobj-underscore"
 "Bundle "nelstrom/vim-textobj-rubyblock"
 "Bundle "thinca/vim-textobj-function-javascript"
+========================================================================================================
+
+" 追加自定义插件
+if filereadable(expand("~/vim/cus_vundles.vim"))
+  source ~/vim/cus_vundles.vim
+endif
