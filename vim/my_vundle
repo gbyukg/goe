@@ -150,6 +150,9 @@ https://github.com/maksimr/vim-jsbeautify
 
 
 PHP
+php debug
+https://github.com/brookhong/DBGPavim
+
 PHP-CS-Fixer PHP样式检查
 https://github.com/fabpot/PHP-CS-Fixer
 
