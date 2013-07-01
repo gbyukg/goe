@@ -28,6 +28,9 @@ Bundle "gmarik/vundle"
 " Bundle "tpope/vim-rvm.git"
 " Bundle "vim-ruby/vim-ruby.git"
 " Bundle "vim-scripts/Specky.git"
+" https://github.com/tpope/vim-rvm
+" rvm
+" Bundle "tpope/vim-rvm.git"
 ========================================================================================================
 
 
@@ -205,6 +208,39 @@ Bundle "terryma/vim-multiple-cursors"
 " https://github.com/Rykka/colorv.vim
 " 一个非常强大的颜色编辑、获取工具
 Bundle "Rykka/colorv.vim"
+
+" https://github.com/vim-scripts/vimwiki
+" vimwiki 通过vim编辑自己的wiki
+Bundle "vim-scripts/vimwiki"
+
+" https://github.com/vim-scripts/bufexplorer.zip
+" bufexplorer buffer管理
+Bundle "vim-scripts/bufexplorer.zip"
+
+" https://github.com/fholgado/minibufexpl.vim
+" minibuffer buffer超强小窗口
+Bundle "fholgado/minibufexpl.vim"
+
+" https://github.com/xolox/vim-session
+" vim session  可以保存本次vim的各种布局和设定等信息，下次可直接打开该session
+Bundle "xolox/vim-session"
+
+" https://github.com/mhinz/vim-startify
+" 打开一个空白的vim时，会显示最近打开的一些文件以及vim的session
+Bundle "mhinz/vim-startify"
+
+" https://github.com/g3orge/vim-voogle
+" 为vim增加索搜功能，默认google
+Bundle "g3orge/vim-voogle"
+
+" https://github.com/vim-scripts/calendar.vim--Matsumoto
+" vim日历插件
+Bundle "vim-scripts/calendar.vim--Matsumoto"
+
+" https://github.com/FredKSchott/CoVim
+" 可链接到远程服务器上的vim进行同步编辑工作 interesting!!!
+"Bundle "FredKSchott/CoVim"
+
 ========================================================================================================
 
 
@@ -214,6 +250,22 @@ Bundle "vim-scripts/L9"
 Bundle "xolox/vim-misc"
 Bundle "AndrewRadev/splitjoin.vim"
 Bundle "tomtom/tlib_vim.git"
+
+" https://github.com/chrisbra/color_highlight
+" 根据颜色名字或颜色代码将名字或颜色上色
+Bundle "chrisbra/color_highlight.git"
+
+" https://github.com/skwp/vim-colors-solarized
+" vim主题，必装
+Bundle "skwp/vim-colors-solarized"
+
+" https://github.com/skwp/vim-powerline
+" 美化vim状态栏，必装
+Bundle "skwp/vim-powerline.git"
+
+" https://github.com/vim-scripts/TagHighlight
+" 高亮代码及tag列表
+Bundle "vim-scripts/TagHighlight.git"
 
 " https://github.com/bogado/file-line
 " Bundle "bogado/file-line.git"
@@ -275,8 +327,6 @@ Bundle "scrooloose/syntastic.git"
 " 非常好的undo插件
 Bundle "sjl/gundo.vim"
 
-" Bundle "skwp/YankRing.vim"
-
 " https://github.com/skwp/greplace.vim
 " 搜索工具
 Bundle "skwp/greplace.vim"
@@ -288,8 +338,6 @@ Bundle "skwp/vim-conque"
 " https://github.com/tpope/vim-endwise
 " 自动为if、for等语句提供闭合功能，支持ruby、c\c++、shell、Lua
 Bundle "tpope/vim-endwise.git"
-
-Bundle "tpope/vim-repeat.git"
 
 " https://github.com/tpope/vim-surround
 " 快速增加或修改当前单词被包含的标签，支持引号、括号、html、xml标签
@@ -313,84 +361,42 @@ Bundle "xsunsmile/showmarks.git"
 "Bundle "tpope/vim-abolish"
 "Bundle "tpope/vim-ragtag"
 "Bundle "vim-scripts/lastpos.vim"
+"Bundle "skwp/YankRing.vim"
+"Bundle "tpope/vim-repeat.git"
 ========================================================================================================
 
 
 "============================================= Text objects ============================================
+" https://github.com/nathanaelkane/vim-indent-guides
+" 代码层级一目了然
+Bundle "nathanaelkane/vim-indent-guides"
 
-Bundle "austintaylor/vim-indentobject"
-
-
-Bundle "bootleq/vim-textobj-rubysymbol"
-
-
-Bundle "coderifous/textobj-word-column.vim"
-
-
-Bundle "kana/vim-textobj-datetime"
+" https://github.com/vim-scripts/argtextobj.vim
+" 提供对参数进行快速操作的插件
+Bundle "vim-scripts/argtextobj.vim"
 
 
-Bundle "kana/vim-textobj-entire"
-
-
+" https://github.com/kana/vim-textobj-function
+" 提供对函数进行快速操作的插件
 Bundle "kana/vim-textobj-function"
 
 
-Bundle "kana/vim-textobj-user"
+"Bundle "austintaylor/vim-indentobject"
+"Bundle "bootleq/vim-textobj-rubysymbol"
 
+" https://github.com/kana/vim-textobj-user
+" 自定义文件对象来创建自己需要的快捷键动作
+"Bundle "kana/vim-textobj-user"
 
-Bundle "lucapette/vim-textobj-underscore"
+" https://github.com/coderifous/textobj-word-column.vim
+" 快速修改列
+"Bundle "coderifous/textobj-word-column.vim"
 
+" https://github.com/kana/vim-textobj-datetime
+" 日期时间插件
+"Bundle "kana/vim-textobj-datetime"
 
-Bundle "nathanaelkane/vim-indent-guides"
-
-
-Bundle "nelstrom/vim-textobj-rubyblock"
-
-
-Bundle "thinca/vim-textobj-function-javascript"
-
-
-Bundle "vim-scripts/argtextobj.vim"
-========================================================================================================
-
-
-"====================================== Cosmetics, color scheme, Powerline...===========================
-
-Bundle "chrisbra/color_highlight.git"
-
-
-Bundle "skwp/vim-colors-solarized"
-
-
-Bundle "skwp/vim-powerline.git"
-
-
-Bundle "vim-scripts/TagHighlight.git"
-
-
-Bundle "itspriddle/vim-jquery.git"
-
-
-Bundle "slim-template/vim-slim.git"
-
-
-Bundle "bogado/file-line.git"
-
-
-Bundle "tpope/vim-rvm.git"
-
-
-Bundle "nelstrom/vim-visual-star-search"
-========================================================================================================
-
-
-"=========================================== Customization =============================================
-" The plugins listed in ~/.vim/.vundles.local will be added here to
-" allow the user to add vim plugins to yadr without the need for a fork.
-if filereadable(expand("~/.yadr/vim/.vundles.local"))
-  source ~/.yadr/vim/.vundles.local
-endif
-
-"Filetype plugin indent on is required by vundle
-filetype plugin indent on
+"Bundle "kana/vim-textobj-entire"
+"Bundle "lucapette/vim-textobj-underscore"
+"Bundle "nelstrom/vim-textobj-rubyblock"
+"Bundle "thinca/vim-textobj-function-javascript"
