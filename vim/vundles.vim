@@ -191,9 +191,9 @@ Bundle "vim-scripts/vimwiki"
 " bufexplorer buffer管理
 Bundle "vim-scripts/bufexplorer.zip"
 
-" https://github.com/fholgado/minibufexpl.vim
+" https://github.com/techlivezheng/vim-plugin-minibufexpl
 " minibuffer buffer超强小窗口
-Bundle "fholgado/minibufexpl.vim"
+Bundle "techlivezheng/vim-plugin-minibufexpl"
 
 " https://github.com/xolox/vim-session
 " vim session  可以保存本次vim的各种布局和设定等信息，下次可直接打开该session
@@ -365,7 +365,7 @@ Bundle "vim-scripts/argtextobj.vim"
 
 " https://github.com/kana/vim-textobj-function
 " 提供对函数进行快速操作的插件
-Bundle "kana/vim-textobj-function"
+"Bundle "kana/vim-textobj-function"
 
 
 "Bundle "austintaylor/vim-indentobject"
