@@ -33,8 +33,13 @@ Bundle "skwp/vim-colors-solarized"
 " 美化vim状态栏，必装
 Bundle "skwp/vim-powerline.git"
 
+" https://github.com/mileszs/ack.vim
+" 搜索工具
+Bundle "mileszs/ack.vim"
+
 " https://github.com/vim-scripts/TagHighlight
 " 高亮代码及tag列表
+" 无配置
 Bundle "vim-scripts/TagHighlight.git"
 
 " https://github.com/bogado/file-line
