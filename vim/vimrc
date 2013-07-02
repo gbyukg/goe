@@ -1,6 +1,0 @@
-#读取vundle
-if test -e ~/.vim/vundles.vim; then
-    source ~/.vim/vundles.vim
-endif
-
-
