@@ -124,10 +124,6 @@ Bundle "vim-scripts/AnsiEsc.vim.git"
 " 可以通过root打开不属于自己的文件
 Bundle "vim-scripts/sudo.vim"
 
-" https://github.com/xsunsmile/showmarks
-" mark插件
-Bundle "xsunsmile/showmarks.git"
-
 " https://github.com/Raimondi/delimitMate
 " 自动添加括号，引号等右半部分
 Bundle "Raimondi/delimitMate"
@@ -214,6 +210,10 @@ Bundle "vim-scripts/calendar.vim--Matsumoto"
 " https://github.com/FredKSchott/CoVim
 " 可链接到远程服务器上的vim进行同步编辑工作 interesting!!!
 "Bundle "FredKSchott/CoVim"
+
+" https://github.com/xsunsmile/showmarks
+" mark插件
+"Bundle "xsunsmile/showmarks.git"
 
 "Bundle "tpope/vim-abolish"
 "Bundle "tpope/vim-ragtag"
