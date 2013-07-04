@@ -212,6 +212,15 @@ Bundle "g3orge/vim-voogle"
 " vim日历插件
 Bundle "vim-scripts/calendar.vim--Matsumoto"
 
+" https://github.com/vim-scripts/LargeFile
+" 能够快速打开大文件(默认定义20M的文件为大文件)
+" g:LargeFile=10MByte
+Bundle "vim-scripts/LargeFile"
+
+" https://github.com/junegunn/vim-github-dashboard
+" 浏览github事件
+Bundle "junegunn/vim-github-dashboard"
+
 " https://github.com/FredKSchott/CoVim
 " 可链接到远程服务器上的vim进行同步编辑工作 interesting!!!
 "Bundle "FredKSchott/CoVim"
