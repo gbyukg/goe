@@ -184,7 +184,7 @@ Bundle "vim-scripts/bufexplorer.zip"
 
 " https://github.com/techlivezheng/vim-plugin-minibufexpl
 " minibuffer buffer超强小窗口
-Bundle "techlivezheng/vim-plugin-minibufexpl"
+"Bundle "techlivezheng/vim-plugin-minibufexpl"
 
 " https://github.com/xolox/vim-session
 " vim session  可以保存本次vim的各种布局和设定等信息，下次可直接打开该session
@@ -206,10 +206,6 @@ Bundle "vim-scripts/calendar.vim--Matsumoto"
 " 能够快速打开大文件(默认定义20M的文件为大文件)
 " g:LargeFile=10MByte
 Bundle "vim-scripts/LargeFile"
-
-" https://github.com/junegunn/vim-github-dashboard
-" 浏览github事件
-"Bundle "junegunn/vim-github-dashboard"
 
 " https://github.com/FredKSchott/CoVim
 " 可链接到远程服务器上的vim进行同步编辑工作 interesting!!!
@@ -264,7 +260,7 @@ Bundle "itspriddle/vim-jquery.git"
 
 " https://github.com/jtratner/vim-flavored-markdown
 " 为markdown文件提供语法高亮
-Bundle "jtratner/vim-flavored-markdown.git"
+"Bundle "jtratner/vim-flavored-markdown.git"
 
 " https://github.com/kchmck/vim-coffee-script
 " vim的CoffeeScript插件
@@ -276,7 +272,7 @@ Bundle "jtratner/vim-flavored-markdown.git"
 
 " https://github.com/nelstrom/vim-markdown-preview
 " 为markdown文件提供预览，其预览效果同github中显示的效果一样
-Bundle "nelstrom/vim-markdown-preview"
+"Bundle "nelstrom/vim-markdown-preview"
 
 " https://github.com/skwp/vim-html-escape
 " <lead>he html转码，如<转成$lt；<lead>hu 反转码
@@ -335,6 +331,10 @@ Bundle "tpope/vim-fugitive"
 " https://github.com/airblade/vim-gitgutter
 " git仓库下的文件改动后会自动在行号先显示相应d图标识出来
 Bundle "airblade/vim-gitgutter"
+
+" https://github.com/junegunn/vim-github-dashboard
+" 浏览github事件
+"Bundle "junegunn/vim-github-dashboard"
 
 " Bundle "tpope/vim-git"
 " Bundle "tjennings/git-grep-vim"
