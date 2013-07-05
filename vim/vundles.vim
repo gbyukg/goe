@@ -234,6 +234,14 @@ Bundle "vim-scripts/LargeFile"
 
 
 "==================================Html, Xml, Css, Markdown...==========================================
+" https://github.com/Chiel92/vim-autoformat
+" 代码格式化插件
+Bundle "Chiel92/vim-autoformat"
+
+" https://github.com/einars/js-beautify
+" js格式化工具
+Bundle "einars/js-beautify"
+
 " https://github.com/aaronjensen/vim-sass-status
 " Lets you know your current css selector while navigating a sass file.
 "Bundle "aaronjensen/vim-sass-status.git"
