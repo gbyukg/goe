@@ -240,7 +240,7 @@ Bundle "Chiel92/vim-autoformat"
 
 " https://github.com/einars/js-beautify
 " js格式化工具
-Bundle "einars/js-beautify"
+"Bundle "einars/js-beautify"
 
 " https://github.com/aaronjensen/vim-sass-status
 " Lets you know your current css selector while navigating a sass file.
