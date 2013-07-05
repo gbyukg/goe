@@ -18,3 +18,6 @@ source vim/install_vim.sh
 
 # html,css格式化工具
 # sudo apt-get install tidy
+
+# sql格式化工具
+# https://github.com/darold/pgFormatter
