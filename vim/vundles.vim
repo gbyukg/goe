@@ -120,10 +120,10 @@ Bundle "tpope/vim-surround.git"
 
 " https://github.com/tpope/vim-unimpaired
 " 新增一些快捷键
-Bundle "tpope/vim-unimpaired"
+"Bundle "tpope/vim-unimpaired"
 
 " https://github.com/vim-scripts/AnsiEsc.vim
-Bundle "vim-scripts/AnsiEsc.vim.git"
+"Bundle "vim-scripts/AnsiEsc.vim.git"
 
 " https://github.com/vim-scripts/sudo.vim
 " 可以通过root打开不属于自己的文件
@@ -161,16 +161,10 @@ Bundle "honza/vim-snippets"
 " 在视图模式下通过选择一段文本，使用*或#在当前文件内进行搜索
 Bundle "nelstrom/vim-visual-star-search"
 
-" Bundle "skwp/vim-easymotion"
-" Bundle "vim-scripts/camelcasemotion.git"
-
 " https://github.com/tomtom/tcomment_vim
 " 注释工具
 Bundle "tomtom/tcomment_vim.git"
 
-" https://github.com/vim-scripts/IndexedSearch
-" 搜索工具
-" Bundle "vim-scripts/IndexedSearch"
 
 " https://github.com/vim-scripts/matchit.zip
 " 使%匹配更多的内容
@@ -183,10 +177,6 @@ Bundle "terryma/vim-multiple-cursors"
 " https://github.com/Rykka/colorv.vim
 " 一个非常强大的颜色编辑、获取工具
 Bundle "Rykka/colorv.vim"
-
-" https://github.com/vim-scripts/vimwiki
-" vimwiki 通过vim编辑自己的wiki
-Bundle "vim-scripts/vimwiki"
 
 " https://github.com/vim-scripts/bufexplorer.zip
 " bufexplorer buffer管理
@@ -229,6 +219,16 @@ Bundle "vim-scripts/LargeFile"
 " mark插件
 "Bundle "xsunsmile/showmarks.git"
 
+" https://github.com/vim-scripts/vimwiki
+" vimwiki 通过vim编辑自己的wiki
+"Bundle "vim-scripts/vimwiki"
+
+" https://github.com/vim-scripts/IndexedSearch
+" 搜索工具
+" Bundle "vim-scripts/IndexedSearch"
+
+"Bundle "skwp/vim-easymotion"
+"Bundle "vim-scripts/camelcasemotion.git"
 "Bundle "tpope/vim-abolish"
 "Bundle "tpope/vim-ragtag"
 "Bundle "vim-scripts/lastpos.vim"
