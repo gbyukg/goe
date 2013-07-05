@@ -16,3 +16,5 @@ source vim/install_vim.sh
 # C#,C++,C,Java格式化工具
 # sudo apt-get install astyle
 
+# html,css格式化工具
+# sudo apt-get install tidy
