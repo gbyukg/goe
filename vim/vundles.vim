@@ -219,7 +219,7 @@ Bundle "vim-scripts/LargeFile"
 
 " https://github.com/junegunn/vim-github-dashboard
 " 浏览github事件
-Bundle "junegunn/vim-github-dashboard"
+"Bundle "junegunn/vim-github-dashboard"
 
 " https://github.com/FredKSchott/CoVim
 " 可链接到远程服务器上的vim进行同步编辑工作 interesting!!!
@@ -240,7 +240,7 @@ Bundle "junegunn/vim-github-dashboard"
 "==================================Html, Xml, Css, Markdown...==========================================
 " https://github.com/aaronjensen/vim-sass-status
 " Lets you know your current css selector while navigating a sass file.
-Bundle "aaronjensen/vim-sass-status.git"
+"Bundle "aaronjensen/vim-sass-status.git"
 
 " https://github.com/claco/jasmine.vim
 " jasmine插件，jasmine是一个js的测试框架
@@ -249,7 +249,7 @@ Bundle "aaronjensen/vim-sass-status.git"
 " https://github.com/digitaltoad/vim-jade
 " 为Jade templates提供语法高亮
 " Jade:https://github.com/visionmedia/jade 
-Bundle "digitaltoad/vim-jade.git"
+"Bundle "digitaltoad/vim-jade.git"
 
 " https://github.com/groenewege/vim-less
 " 为less语言提供语法高亮，代码提示等功能
@@ -280,25 +280,7 @@ Bundle "nelstrom/vim-markdown-preview"
 
 " https://github.com/skwp/vim-html-escape
 " <lead>he html转码，如<转成$lt；<lead>hu 反转码
-Bundle "skwp/vim-html-escape"
-
-" https://github.com/slim-template/vim-slim
-" 使vim支持slim
-" slim：https://github.com/slim-template/slim
-" Bundle "slim-template/vim-slim.git"
-
-" https://github.com/timcharper/textile.vim
-" 为textile文档提供支持
-"Bundle "timcharper/textile.vim.git"
-
-" https://github.com/tpope/vim-haml
-" 支持Haml, Sass, 和 SCSS
-Bundle "tpope/vim-haml"
-
-" https://github.com/wavded/vim-stylus
-" 为stylus提供高亮语法
-" stylus: http://learnboost.github.io/stylus/
-Bundle "wavded/vim-stylus"
+"Bundle "skwp/vim-html-escape"
 
 " https://github.com/vim-scripts/HTML-AutoCloseTag
 " HTML-Auto-close 自动添加html关闭标签
@@ -311,6 +293,24 @@ Bundle "gregsexton/MatchTag"
 " https://github.com/elzr/vim-json
 " json语法高亮
 Bundle "elzr/vim-json"
+
+" https://github.com/slim-template/vim-slim
+" 使vim支持slim
+" slim：https://github.com/slim-template/slim
+" Bundle "slim-template/vim-slim.git"
+
+" https://github.com/timcharper/textile.vim
+" 为textile文档提供支持
+"Bundle "timcharper/textile.vim.git"
+
+" https://github.com/tpope/vim-haml
+" 支持Haml, Sass, 和 SCSS
+"Bundle "tpope/vim-haml"
+
+" https://github.com/wavded/vim-stylus
+" 为stylus提供高亮语法
+" stylus: http://learnboost.github.io/stylus/
+"Bundle "wavded/vim-stylus"
 "=======================================================================================================
 
 
@@ -359,11 +359,11 @@ Bundle "airblade/vim-gitgutter"
 "===================================Other languages=====================================================
 " https://github.com/briancollins/vim-jst
 " JST/EJS语法高亮
-Bundle "briancollins/vim-jst"
+"Bundle "briancollins/vim-jst"
 
 " https://github.com/pangloss/vim-javascript
 " 
-Bundle "pangloss/vim-javascript"
+"Bundle "pangloss/vim-javascript"
 "=======================================================================================================
 
 
