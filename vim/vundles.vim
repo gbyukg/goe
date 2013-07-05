@@ -357,6 +357,10 @@ Bundle "airblade/vim-gitgutter"
 
 
 "===================================Other languages=====================================================
+" https://github.com/vim-scripts/c.vim
+" c/c++ IDE
+Bundle "vim-scripts/c.vim"
+
 " https://github.com/briancollins/vim-jst
 " JST/EJS语法高亮
 "Bundle "briancollins/vim-jst"
