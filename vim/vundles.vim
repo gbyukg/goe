@@ -184,7 +184,7 @@ Bundle "vim-scripts/bufexplorer.zip"
 
 " https://github.com/techlivezheng/vim-plugin-minibufexpl
 " minibuffer buffer超强小窗口
-"Bundle "techlivezheng/vim-plugin-minibufexpl"
+Bundle "techlivezheng/vim-plugin-minibufexpl"
 
 " https://github.com/xolox/vim-session
 " vim session  可以保存本次vim的各种布局和设定等信息，下次可直接打开该session
@@ -200,7 +200,7 @@ Bundle "g3orge/vim-voogle"
 
 " https://github.com/vim-scripts/calendar.vim--Matsumoto
 " vim日历插件
-Bundle "vim-scripts/calendar.vim--Matsumoto"
+"Bundle "vim-scripts/calendar.vim--Matsumoto"
 
 " https://github.com/vim-scripts/LargeFile
 " 能够快速打开大文件(默认定义20M的文件为大文件)
