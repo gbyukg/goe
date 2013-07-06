@@ -328,6 +328,10 @@ Bundle "gregsexton/gitv"
 " 用于创建gist
 Bundle "mattn/gist-vim"
 
+" https://github.com/tjennings/git-grep-vim
+" vim-git-grep-rails-partial依赖库
+Bundle "tjennings/git-grep-vim"
+
 " https://github.com/skwp/vim-git-grep-rails-partial
 " 用于查看当前文件的所有引用信息
 Bundle "skwp/vim-git-grep-rails-partial"
