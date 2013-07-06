@@ -1,7 +1,23 @@
 #!/bin/bash
 
+file="$HOME/.goe"
+
+if test -d $file ; then
+    echo '已存在'
+    rm -rf ~/.goe ~/.vimrc ~/.vim
+fi
+git clone https://github.com/gbyukg/goe $HOME/.goe
+mkdir -p $HOME/.goe/vim/autoload $HOME/.goe/vim/bundle
+curl -Sso $HOME/.goe/vim/autoload/pathogen.vim \
+      https://raw.github.com/tpope/vim-pathogen/master/autoload/pathogen.vim
+git clone https://github.com/gmarik/vundle.git ~/.goe/vim/bundle/vundle
+ln -s $HOME/.goe/vimrc $HOME/.vimrc
+ln -s $HOME/.goe/vim $HOME/.vim
+vim +BundleInstall +qall
+mv ~/.goe/plugin ~/.goe/vim/plugin
+
 #安装vim插件
-source vim/install_vim.sh
+#source vim/install_vim.sh
 
 # 安装ag
 # https://github.com/ggreer/the_silver_searcher
