@@ -1,5 +1,6 @@
 #!/bin/bash
 
+# sh -c "`curl -fsSL https://raw.github.com/gbyukg/goe/master/install.sh`"
 file="$HOME/.goe"
 
 if test -d $file ; then
