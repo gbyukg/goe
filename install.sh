@@ -5,16 +5,23 @@ file="$HOME/.goe"
 
 if test -d $file ; then
     echo '已存在'
-    rm -rf ~/.goe ~/.vimrc ~/.vim
+#    rm -rf ~/.goe ~/.vimrc ~/.vim
 fi
+mv ~/.vimrc ~/vimrc_back_goe
+mv ~/.vim ~/vim_back_goe
+
 git clone https://github.com/gbyukg/goe $HOME/.goe
+
 mkdir -p $HOME/.goe/vim/autoload $HOME/.goe/vim/bundle
+
 curl -Sso $HOME/.goe/vim/autoload/pathogen.vim \
       https://raw.github.com/tpope/vim-pathogen/master/autoload/pathogen.vim
+      
 git clone https://github.com/gmarik/vundle.git ~/.goe/vim/bundle/vundle
 ln -s $HOME/.goe/vimrc $HOME/.vimrc
 ln -s $HOME/.goe/vim $HOME/.vim
 vim +BundleInstall +qall
+
 mv ~/.goe/plugin ~/.goe/vim/plugin
 
 #安装vim插件
