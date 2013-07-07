@@ -71,15 +71,23 @@ Bundle "kien/ctrlp.vim"
 
 " https://github.com/vim-scripts/ctags.vim--Johnson
 " ctags
-Bundle "vim-scripts/ctags.vim--Johnson"
+"Bundle "vim-scripts/ctags.vim--Johnson"
 
 " https://github.com/majutsushi/tagbar
 " tag列表
-Bundle "majutsushi/tagbar.git"
+"Bundle "majutsushi/tagbar.git"
 
 " https://github.com/vim-scripts/AutoTag
 " 增强ctags功能
-Bundle "vim-scripts/AutoTag.git"
+"Bundle "vim-scripts/AutoTag.git"
+
+" https://github.com/vim-scripts/cscope.vim
+" 
+Bundle "vim-scripts/cscope.vim"
+
+" https://github.com/xolox/vim-easytags
+" tag
+Bundle "xolox/vim-easytags"
 
 " https://github.com/mattn/webapi-vim
 " 为vim提供curl接口
