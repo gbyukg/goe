@@ -192,7 +192,7 @@ Bundle "vim-scripts/bufexplorer.zip"
 
 " https://github.com/techlivezheng/vim-plugin-minibufexpl
 " minibuffer buffer超强小窗口
-Bundle "techlivezheng/vim-plugin-minibufexpl"
+"Bundle "techlivezheng/vim-plugin-minibufexpl"
 
 " https://github.com/xolox/vim-session
 " vim session  可以保存本次vim的各种布局和设定等信息，下次可直接打开该session
@@ -377,6 +377,10 @@ Bundle "airblade/vim-gitgutter"
 " https://github.com/joonty/vdebug
 " debug
 Bundle "joonty/vdebug"
+
+" https://github.com/jaredly/vim-debug
+" debug
+Bundle "jaredly/vim-debug"
 
 
 "===================================Other languages=====================================================
