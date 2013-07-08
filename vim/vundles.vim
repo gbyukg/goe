@@ -380,7 +380,7 @@ Bundle "joonty/vdebug"
 
 " https://github.com/jaredly/vim-debug
 " debug
-Bundle "jaredly/vim-debug"
+"Bundle "jaredly/vim-debug"
 
 
 "===================================Other languages=====================================================
