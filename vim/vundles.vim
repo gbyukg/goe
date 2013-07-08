@@ -79,7 +79,11 @@ Bundle "kien/ctrlp.vim"
 
 " https://github.com/vim-scripts/AutoTag
 " 增强ctags功能
-"Bundle "vim-scripts/AutoTag.git"
+Bundle "vim-scripts/AutoTag.git"
+
+" https://github.com/xolox/vim-easytags
+" tag
+Bundle "xolox/vim-easytags"
 
 " https://github.com/vim-scripts/cscope.vim
 " 
