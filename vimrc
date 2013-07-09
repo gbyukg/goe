@@ -2,6 +2,8 @@
 " This must be first, because it changes other options as a side effect.
 set nocompatible
 
+execute pathogen#infect()
+
 " TODO: this may not be in the correct place. It is intended to allow overriding <Leader>.
 " source ~/.vimrc.before if it exists.
 if filereadable(expand("~/.vimrc.before"))
