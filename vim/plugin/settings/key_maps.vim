@@ -36,6 +36,9 @@ inoremap <silent> <C-\> <Esc>:NERDTreeFind<CR>:vertical res 30<CR>
 "===================== Ctrlp ================================
 inoremap <silent> <C-p> <Esc>:CtrlP<CR>
 
+"====================== startify ============================
+inoremap <leader>s <Esc>:Startify<CR>
+nnoremap <leader>s :Startify<CR>
 
 "===================== gundo ================================
 " 打开undo时，当前窗口若是最后一个窗口，关闭该窗口应该关闭undo窗口
