@@ -26,6 +26,42 @@ inoremap <silent> <C-a> <Esc>:w<CR>
 nnoremap <silent> <C-i> :file<CR>
 inoremap <silent> <C-i> <Esc>:file<CR>
 
+" ,q to toggle quickfix window (where you have stuff like GitGrep)
+" ,oq to open it back up (rare)
+nmap <silent> ,qc :CloseSingleConque<CR>:cclose<CR>
+nmap <silent> ,qo :copen<CR>
+
+" 跳转到文件最后修改位置处
+nnoremap ,. '.
+
+nnoremap <silent> ,z :bp<CR>
+nnoremap <silent> ,x :bn<CR>
+
+" copy current filename into system clipboard - mnemonic: (c)urrent(f)ilename
+" this is helpful to paste someone the path you're looking at
+nnoremap <silent> ,cf :let @* = expand("%:~")<CR>
+nnoremap <silent> ,cn :let @* = expand("%:t")<CR>
+
+"(v)im (r)eload
+nmap <silent> ,vr :so %<CR>
+
+" Create window splits easier. The default
+" way is Ctrl-w,v and Ctrl-w,s. I remap
+" this to vv and ss
+nnoremap <silent> vv <C-w>v
+nnoremap <silent> ss <C-w>s
+
+" Use numbers to pick the tab you want (like iTerm)
+map <silent> <D-1> :tabn 1<cr>
+map <silent> <D-2> :tabn 2<cr>
+map <silent> <D-3> :tabn 3<cr>
+map <silent> <D-4> :tabn 4<cr>
+map <silent> <D-5> :tabn 5<cr>
+map <silent> <D-6> :tabn 6<cr>
+map <silent> <D-7> :tabn 7<cr>
+map <silent> <D-8> :tabn 8<cr>
+map <silent> <D-9> :tabn 9<cr>
+
 "===================== NERDTree ================================
 inoremap <silent> <C-n> <Esc>:NERDTreeTabsToggle<CR>
 nnoremap <silent> <C-n> :NERDTreeTabsToggle<CR>
