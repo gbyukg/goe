@@ -12,6 +12,9 @@ mv ~/.vimrc ~/vimrc_back_goe
 mv ~/.vim ~/vim_back_goe
 
 git clone https://github.com/gbyukg/goe $HOME/.goe
+cd $HOME/.goe
+git submodule init
+git submodule update
 
 ln -s $HOME/.goe/vimrc $HOME/.vimrc
 ln -s $HOME/.goe/vim $HOME/.vim
