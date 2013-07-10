@@ -277,3 +277,10 @@ vmap <leader>gV :Gitv! --all<cr>
                         q     close status
                         R     reload status
                         S     |:Gvsplit|
+
+=== Tabularize ==========================================
+说明
+快速修改文本对齐功能
+
+常用命令
+Tabularize /)
