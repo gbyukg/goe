@@ -23,6 +23,10 @@ inoremap <silent> <C-s> <Esc>:w<CR>
 nnoremap <silent> <C-a> gg<CR>V<CR>G<CR>
 inoremap <silent> <C-a> <Esc>:w<CR>
 
+nnoremap <silent> <leader>p "+gP 
+nnoremap <silent> <leader>x "+x
+nnoremap <silent> <C-c> "+y
+
 nnoremap <silent> <C-i> :file<CR>
 inoremap <silent> <C-i> <Esc>:file<CR>
 
