@@ -29,9 +29,9 @@ Bundle "chrisbra/color_highlight.git"
 " vim主题，必装
 Bundle "skwp/vim-colors-solarized"
 
-" https://github.com/skwp/vim-powerline
+" https://github.com/Lokaltog/vim-powerline
 " 美化vim状态栏，必装
-Bundle "skwp/vim-powerline.git"
+Bundle "Lokaltog/vim-powerline"
 
 " https://github.com/mileszs/ack.vim
 " 搜索工具
