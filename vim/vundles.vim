@@ -399,6 +399,10 @@ Bundle "vim-scripts/c.vim"
 " https://github.com/pangloss/vim-javascript
 " 
 "Bundle "pangloss/vim-javascript"
+
+" https://github.com/vim-scripts/vim-wakatime
+" 记录每天使用vim在那些文件上使用了多长时间，上传到https://www.wakati.me
+"Bundle "https://github.com/vim-scripts/vim-wakatime"
 "=======================================================================================================
 
 
