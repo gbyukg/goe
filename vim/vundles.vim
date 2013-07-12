@@ -37,10 +37,10 @@ Bundle "Lokaltog/vim-powerline"
 " 搜索工具
 Bundle "mileszs/ack.vim"
 
-" https://github.com/vim-scripts/TagHighlight
-" 高亮代码及tag列表
-" 无配置
-Bundle "vim-scripts/TagHighlight.git"
+" https://github.com/rking/ag.vim
+" 使vim集成ag搜索工具
+" 需要系统安装ag：https://github.com/ggreer/the_silver_searcher
+"Bundle "rking/ag.vim"
 
 " https://github.com/bogado/file-line
 " Bundle "bogado/file-line.git"
@@ -85,18 +85,18 @@ Bundle "kien/ctrlp.vim"
 " tag
 Bundle "xolox/vim-easytags"
 
+" https://github.com/vim-scripts/TagHighlight
+" 高亮代码及tag列表
+" 无配置
+"Bundle "vim-scripts/TagHighlight.git"
+
 " https://github.com/brookhong/cscope.vim
-" 
+" ctag增强功能
 Bundle "brookhong/cscope.vim"
 
 " https://github.com/mattn/webapi-vim
 " 为vim提供curl接口
 Bundle "mattn/webapi-vim.git"
-
-" https://github.com/rking/ag.vim
-" 使vim集成ag搜索工具
-" 需要系统安装ag：https://github.com/ggreer/the_silver_searcher
-Bundle "rking/ag.vim"
 
 " https://github.com/scrooloose/syntastic
 " 超强大的语法检测工具
@@ -173,7 +173,6 @@ Bundle "nelstrom/vim-visual-star-search"
 " 注释工具
 Bundle "tomtom/tcomment_vim.git"
 
-
 " https://github.com/vim-scripts/matchit.zip
 " 使%匹配更多的内容
 Bundle "vim-scripts/matchit.zip.git"
@@ -181,10 +180,6 @@ Bundle "vim-scripts/matchit.zip.git"
 " https://github.com/terryma/vim-multiple-cursors
 " 多鼠标，同时对多个地方做相同的修改，强大！！！
 Bundle "terryma/vim-multiple-cursors"
-
-" https://github.com/Rykka/colorv.vim
-" 一个非常强大的颜色编辑、获取工具
-Bundle "Rykka/colorv.vim"
 
 " https://github.com/vim-scripts/bufexplorer.zip
 " bufexplorer buffer管理
@@ -204,7 +199,7 @@ Bundle "mhinz/vim-startify"
 
 " https://github.com/g3orge/vim-voogle
 " 为vim增加索搜功能，默认google
-Bundle "g3orge/vim-voogle"
+"Bundle "g3orge/vim-voogle"
 
 " https://github.com/vim-scripts/calendar.vim--Matsumoto
 " vim日历插件
@@ -219,17 +214,13 @@ Bundle "vim-scripts/LargeFile"
 " 可链接到远程服务器上的vim进行同步编辑工作 interesting!!!
 "Bundle "FredKSchott/CoVim"
 
-" https://github.com/xsunsmile/showmarks
-" mark插件
-"Bundle "xsunsmile/showmarks.git"
+" https://github.com/kshenoy/vim-signature
+" vim mark插件
+"Bundle "kshenoy/vim-signature"
 
 " https://github.com/vim-scripts/vimwiki
 " vimwiki 通过vim编辑自己的wiki
 "Bundle "vim-scripts/vimwiki"
-
-" https://github.com/vim-scripts/IndexedSearch
-" 搜索工具
-" Bundle "vim-scripts/IndexedSearch"
 
 "Bundle "skwp/vim-easymotion"
 "Bundle "vim-scripts/camelcasemotion.git"
@@ -245,6 +236,14 @@ Bundle "vim-scripts/LargeFile"
 " https://github.com/Chiel92/vim-autoformat
 " 代码格式化插件
 Bundle "Chiel92/vim-autoformat"
+
+" https://github.com/vim-scripts/HTML-AutoCloseTag
+" HTML-Auto-close 自动添加html关闭标签
+Bundle "vim-scripts/HTML-AutoCloseTag"
+
+" https://github.com/gregsexton/MatchTag
+" HTML标签自动匹配高亮显示
+Bundle "gregsexton/MatchTag"
 
 " https://github.com/einars/js-beautify
 " js格式化工具
@@ -272,7 +271,7 @@ Bundle "Chiel92/vim-autoformat"
 " https://github.com/itspriddle/vim-jquery
 " 为jquery提供高亮语法
 " 无配置
-Bundle "itspriddle/vim-jquery.git"
+"Bundle "itspriddle/vim-jquery.git"
 
 " https://github.com/jtratner/vim-flavored-markdown
 " 为markdown文件提供语法高亮
@@ -294,17 +293,13 @@ Bundle "itspriddle/vim-jquery.git"
 " <lead>he html转码，如<转成$lt；<lead>hu 反转码
 "Bundle "skwp/vim-html-escape"
 
-" https://github.com/vim-scripts/HTML-AutoCloseTag
-" HTML-Auto-close 自动添加html关闭标签
-Bundle "vim-scripts/HTML-AutoCloseTag"
-
-" https://github.com/gregsexton/MatchTag
-" HTML标签自动匹配高亮显示
-Bundle "gregsexton/MatchTag"
-
 " https://github.com/elzr/vim-json
 " json语法高亮
-Bundle "elzr/vim-json"
+"Bundle "elzr/vim-json"
+
+" https://github.com/Rykka/colorv.vim
+" 一个非常强大的颜色编辑、获取工具
+"Bundle "Rykka/colorv.vim"
 
 " https://github.com/slim-template/vim-slim
 " 使vim支持slim
@@ -402,7 +397,7 @@ Bundle "vim-scripts/c.vim"
 "=======================================================================================================
 
 
-"============================================= Text objects ============================================
+"============================================= Other ============================================
 " https://github.com/nathanaelkane/vim-indent-guides
 " 代码层级一目了然
 Bundle "nathanaelkane/vim-indent-guides"
@@ -415,7 +410,6 @@ Bundle "vim-scripts/argtextobj.vim"
 " https://github.com/kana/vim-textobj-function
 " 提供对函数进行快速操作的插件
 "Bundle "kana/vim-textobj-function"
-
 
 "Bundle "austintaylor/vim-indentobject"
 "Bundle "bootleq/vim-textobj-rubysymbol"
