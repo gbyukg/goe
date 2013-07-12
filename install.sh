@@ -41,3 +41,9 @@ vim +BundleInstall +qall
 
 # sql格式化工具
 # https://github.com/darold/pgFormatter
+
+
+# homebrew Mac下的apt-get
+# https://github.com/mxcl/homebrew
+
+
