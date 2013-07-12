@@ -27,4 +27,4 @@ let g:session_autoload='yes'
 let g:session_default_to_last= 0
 
 " 自动将关闭时的vim状态保存到默认session中
-g:session_default_overwrite = 1
+let g:session_default_overwrite = 1
