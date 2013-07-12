@@ -46,4 +46,5 @@ vim +BundleInstall +qall
 # homebrew Mac下的apt-get
 # https://github.com/mxcl/homebrew
 
+# oh-my-zsh
 
