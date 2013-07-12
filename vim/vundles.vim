@@ -85,13 +85,9 @@ Bundle "kien/ctrlp.vim"
 " tag
 Bundle "xolox/vim-easytags"
 
-" https://github.com/vim-scripts/cscope.vim
+" https://github.com/brookhong/cscope.vim
 " 
-Bundle "vim-scripts/cscope.vim"
-
-" https://github.com/xolox/vim-easytags
-" tag
-Bundle "xolox/vim-easytags"
+Bundle "brookhong/cscope.vim"
 
 " https://github.com/mattn/webapi-vim
 " 为vim提供curl接口
