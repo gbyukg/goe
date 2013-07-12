@@ -5,17 +5,9 @@
 " vim主题
 " =================================================================
 
-
 syntax enable
-"set background=dark
-
-if exists("g:loaded_togglebg")
-	colorscheme solarized
-endif
-
+set background=dark
 
 if has('gui_running')
-    set background=light
-else
-    set background=dark
+    colorscheme solarized
 endif
