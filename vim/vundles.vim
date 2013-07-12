@@ -439,6 +439,6 @@ Bundle "vim-scripts/argtextobj.vim"
 "=======================================================================================================
 
 " 追加自定义插件
-if filereadable(expand("~/vim/cus_vundles.vim"))
-  source ~/vim/cus_vundles.vim
+if filereadable(expand("~/.vundles.after.vim"))
+  source ~/.vundles.after.vim
 endif
