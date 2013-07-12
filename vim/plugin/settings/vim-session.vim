@@ -24,5 +24,7 @@ let g:session_autoload='yes'
 :let g:session_autosave = 'yes'
 
 " 默认为0，设定为1则打开vim时自动打开最后一次保存的session
-let g:session_default_to_last= 1
+let g:session_default_to_last= 0
 
+" 自动将关闭时的vim状态保存到默认session中
+g:session_default_overwrite = 1
