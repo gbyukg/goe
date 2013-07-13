@@ -216,7 +216,7 @@ Bundle "vim-scripts/LargeFile"
 
 " https://github.com/kshenoy/vim-signature
 " vim mark插件
-"Bundle "kshenoy/vim-signature"
+Bundle "kshenoy/vim-signature"
 
 " https://github.com/vim-scripts/vimwiki
 " vimwiki 通过vim编辑自己的wiki
