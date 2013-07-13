@@ -47,4 +47,4 @@ vim +BundleInstall +qall
 # https://github.com/mxcl/homebrew
 
 # oh-my-zsh
-
+# cscope
