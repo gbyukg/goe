@@ -48,3 +48,8 @@ vim +BundleInstall +qall
 
 # oh-my-zsh
 # cscope
+
+# js ctags
+# 使用该版本
+# git checkout 1062dd31625cc002261f15e68af77eedd63a56f6
+# sudo make install
