@@ -13,18 +13,15 @@
 " 不保存help窗口
 set sessionoptions-=help
 
-" 可选值:prompt、yes、no
-" prompt:当打开vim而没指定文件时，会弹出提示是否保存当前session
-" yes:一直显示
-" no:不显示
-let g:session_autoload='yes'
+" 打开vim时若没有指定文件，则自动打开上次保存的session
+let g:session_autoload = 'yes'
 
 " 可选值:prompt、yes、no
-" 是否自动打开关闭session
-:let g:session_autosave = 'yes'
+" 当打开一个session时，关闭该文件后是否自动保存session
+let g:session_autosave = 'yes'
 
 " 默认为0，设定为1则打开vim时自动打开最后一次保存的session
-let g:session_default_to_last= 0
+let g:session_default_to_last= 1
 
 " 自动将关闭时的vim状态保存到默认session中
 let g:session_default_overwrite = 1
