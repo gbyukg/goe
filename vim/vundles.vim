@@ -245,6 +245,10 @@ Bundle "vim-scripts/HTML-AutoCloseTag"
 " HTML标签自动匹配高亮显示
 Bundle "gregsexton/MatchTag"
 
+" https://github.com/mozilla/doctorjs
+" js ctags
+Bundle "mozilla/doctorjs"
+
 " https://github.com/einars/js-beautify
 " js格式化工具
 "Bundle "einars/js-beautify"
@@ -377,6 +381,10 @@ Bundle "joonty/vdebug"
 " debug
 "Bundle "jaredly/vim-debug"
 
+" https://github.com/techlivezheng/vim-plugin-tagbar-phpctags
+" phpctags 
+" 需要先安装https://github.com/techlivezheng/phpctags
+Bundle "techlivezheng/vim-plugin-tagbar-phpctags"
 
 "===================================Other languages=====================================================
 " https://github.com/vim-scripts/c.vim
