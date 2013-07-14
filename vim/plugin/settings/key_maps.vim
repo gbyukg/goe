@@ -32,7 +32,8 @@ inoremap <silent> <C-i> <Esc>:file<CR>
 
 nnoremap <silent> <leader>t :TagbarToggle<CR>
 
-nnoremap <silent> <Leader>o :OpenSession<CR>
+nnoremap <silent> <Leader>o :OpenSession!<CR>
+nnoremap <silent> <Leader>O :SaveSession!<CR>
 
 
 " ,q to toggle quickfix window (where you have stuff like GitGrep)
