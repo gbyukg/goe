@@ -75,7 +75,7 @@ Bundle "kien/ctrlp.vim"
 
 " https://github.com/majutsushi/tagbar
 " tag列表
-"Bundle "majutsushi/tagbar.git"
+Bundle "majutsushi/tagbar.git"
 
 " https://github.com/vim-scripts/AutoTag
 " 增强ctags功能
