@@ -23,9 +23,14 @@ inoremap <silent> <C-s> <Esc>:w<CR>
 nnoremap <silent> <C-a> gg<CR>V<CR>G<CR>
 inoremap <silent> <C-a> <Esc>:w<CR>
 
-nnoremap <silent> <leader>p "+gP 
-nnoremap <silent> <leader>x "+x
-nnoremap <silent> <C-c> "+y
+nnoremap <silent> <F7> "+y 
+nnoremap <silent> <F8> "+x
+nnoremap <silent> <F9> "+p
+
+" Quick Fix 设置
+map <F3> :cw<cr>
+map <F4> :cp<cr>
+map <F5> :cn<cr>
 
 nnoremap <silent> <C-i> :file<CR>
 inoremap <silent> <C-i> <Esc>:file<CR>

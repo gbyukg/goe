@@ -25,6 +25,13 @@ set cursorline                  "高亮当前行
 " http://items.sjbach.com/319/configuring-vim-right
 set hidden
 
+set encoding=utf8
+set fileencodings=utf8,gb2312,gb18030,ucs-bom,latin1
+
+" 恢复上次文件打开位置
+set viminfo='10,\"100,:20,%,n~/.viminfo'
+au BufReadPost * if line("'\"") > 0|if line("'\"") <= line("$")|exe("norm '\"")|else|exe "norm $"|endif|endif
+
 "turn on syntax highlighting
 syntax on
 filetype plugin on
