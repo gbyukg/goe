@@ -32,6 +32,8 @@ set fileencodings=utf8,gb2312,gb18030,ucs-bom,latin1
 set viminfo='10,\"100,:20,%,n~/.viminfo'
 au BufReadPost * if line("'\"") > 0|if line("'\"") <= line("$")|exe("norm '\"")|else|exe "norm $"|endif|endif
 
+set magic
+
 "turn on syntax highlighting
 syntax on
 filetype plugin on
@@ -77,7 +79,14 @@ set tabstop=4   "制表符宽度
 set expandtab   "在缩进和遇到Tab时使用空格代替；noexpandtab取消设置
 " Display tabs and trailing spaces visually
 set list listchars=tab:\ \ ,trail:·
-set nowrap       "Don't wrap lines
+
+if &filetype == 'sh'
+    set wrap
+else
+    set nowrap
+endif
+
+"set nowrap       "Don't wrap lines
 set linebreak    "Wrap lines at convenient points
 
 " ================ Folds ============================

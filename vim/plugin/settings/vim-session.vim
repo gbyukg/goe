@@ -14,7 +14,7 @@
 set sessionoptions-=help
 
 " 打开vim时若没有指定文件，则自动打开上次保存的session
-let g:session_autoload = 'yes'
+let g:session_autoload = 'no'
 
 " 可选值:prompt、yes、no
 " 当打开一个session时，关闭该文件后是否自动保存session
