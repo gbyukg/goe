@@ -75,6 +75,11 @@ map <silent> <D-6> :tabn 6<cr>
 map <silent> <D-7> :tabn 7<cr>
 map <silent> <D-8> :tabn 8<cr>
 map <silent> <D-9> :tabn 9<cr>
+map <silent> <Leader>n <Esc>:tabprevious<CR>
+map <silent> <Leader>m <Esc>:tabNext<CR>
+
+vnoremap < <gv
+vnoremap > >gv
 
 "===================== NERDTree ================================
 inoremap <silent> <C-n> <Esc>:NERDTreeTabsToggle<CR>
