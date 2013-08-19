@@ -32,9 +32,6 @@ map <F3> :cw<cr>
 map <F4> :cp<cr>
 map <F5> :cn<cr>
 
-nnoremap <silent> <C-i> :file<CR>
-inoremap <silent> <C-i> <Esc>:file<CR>
-
 nnoremap <silent> <leader>t :TagbarToggle<CR>
 
 nnoremap <silent> <Leader>o :OpenSession!<CR>
