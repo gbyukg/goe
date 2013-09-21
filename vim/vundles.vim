@@ -112,11 +112,11 @@ Bundle "sjl/gundo.vim"
 
 " https://github.com/skwp/greplace.vim
 " 搜索工具
-Bundle "skwp/greplace.vim"
+" Bundle "skwp/greplace.vim"
 
 " https://github.com/skwp/vim-conque
 " 可以在当前buffer中执行程序，如bash、mysql等
-Bundle "skwp/vim-conque"
+" Bundle "skwp/vim-conque"
 
 " https://github.com/tpope/vim-endwise
 " 自动为if、for等语句提供闭合功能，支持ruby、c\c++、shell、Lua
@@ -135,7 +135,7 @@ Bundle "tpope/vim-surround.git"
 
 " https://github.com/vim-scripts/sudo.vim
 " 可以通过root打开不属于自己的文件
-Bundle "vim-scripts/sudo.vim"
+" Bundle "vim-scripts/sudo.vim"
 
 " https://github.com/Raimondi/delimitMate
 " 自动添加括号，引号等右半部分
@@ -333,7 +333,7 @@ Bundle "gregsexton/gitv"
 
 " https://github.com/mattn/gist-vim
 " 用于创建gist
-Bundle "mattn/gist-vim"
+" Bundle "mattn/gist-vim"
 
 " https://github.com/tjennings/git-grep-vim
 " vim-git-grep-rails-partial依赖库
@@ -389,7 +389,7 @@ Bundle "techlivezheng/vim-plugin-tagbar-phpctags"
 "===================================Other languages=====================================================
 " https://github.com/vim-scripts/c.vim
 " c/c++ IDE
-Bundle "vim-scripts/c.vim"
+" Bundle "vim-scripts/c.vim"
 
 " https://github.com/briancollins/vim-jst
 " JST/EJS语法高亮
