@@ -291,7 +291,11 @@ Bundle "mozilla/doctorjs"
 
 " https://github.com/nelstrom/vim-markdown-preview
 " 为markdown文件提供预览，其预览效果同github中显示的效果一样
-"Bundle "nelstrom/vim-markdown-preview"
+Bundle "nelstrom/vim-markdown-preview"
+
+" https://github.com/plasticboy/vim-markdown
+" 为markdown提供高亮语法功能
+Bundle "plasticboy/vim-markdown"
 
 " https://github.com/skwp/vim-html-escape
 " <lead>he html转码，如<转成$lt；<lead>hu 反转码
