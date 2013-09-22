@@ -147,7 +147,11 @@ Bundle "Raimondi/delimitMate"
 
 " https://github.com/Shougo/neocomplcache.vim
 " 通过对当前文件的缓存，可对关键字提示
-Bundle "Shougo/neocomplcache.git"
+" Bundle "Shougo/neocomplcache.git"
+
+" https://github.com/Valloric/YouCompleteMe
+" 更强大的提示工具
+Bundle "Valloric/YouCompleteMe"
 
 " https://github.com/briandoll/change-inside-surroundings.vim
 " 一个能够快速修改{}, (), "", ><, [], '', ``之间内容的插件
