@@ -369,21 +369,21 @@ Bundle "airblade/vim-gitgutter"
 
 
 "===================================Ruby, Rails, Rake...================================================
-" Bundle "astashov/vim-ruby-debugger"
-" Bundle "ecomba/vim-ruby-refactoring"
+Bundle "astashov/vim-ruby-debugger"
+Bundle "ecomba/vim-ruby-refactoring"
 " Bundle "skwp/vim-ruby-conque"
-" Bundle "tpope/vim-rails.git"
-" Bundle "tpope/vim-rake.git"
-" Bundle "tpope/vim-rvm.git"
-" Bundle "vim-ruby/vim-ruby.git"
-" Bundle "vim-scripts/Specky.git"
+Bundle "tpope/vim-rails.git"
+Bundle "tpope/vim-rake.git"
+Bundle "tpope/vim-rvm.git"
+Bundle "vim-ruby/vim-ruby.git"
+Bundle "vim-scripts/Specky.git"
 " https://github.com/tpope/vim-rvm
 "=======================================================================================================
 
 "============================================= PHP =====================================================
 " https://github.com/joonty/vdebug
 " debug
-Bundle "joonty/vdebug"
+" Bundle "joonty/vdebug"
 
 " https://github.com/jaredly/vim-debug
 " debug
@@ -392,7 +392,7 @@ Bundle "joonty/vdebug"
 " https://github.com/techlivezheng/vim-plugin-tagbar-phpctags
 " phpctags 
 " 需要先安装https://github.com/techlivezheng/phpctags
-Bundle "techlivezheng/vim-plugin-tagbar-phpctags"
+" Bundle "techlivezheng/vim-plugin-tagbar-phpctags"
 
 "===================================Other languages=====================================================
 " https://github.com/vim-scripts/c.vim

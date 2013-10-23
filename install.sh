@@ -20,6 +20,9 @@ ln -s $HOME/.goe/vimrc $HOME/.vimrc
 ln -s $HOME/.goe/vim $HOME/.vim
 vim +BundleInstall +qall
 
+cd ~/.vim/bundle/YouCompleteMe
+./install.sh
+
 #安装vim插件
 #source vim/install_vim.sh
 
