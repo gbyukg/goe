@@ -369,14 +369,14 @@ Bundle "airblade/vim-gitgutter"
 
 
 "===================================Ruby, Rails, Rake...================================================
-Bundle "astashov/vim-ruby-debugger"
-Bundle "ecomba/vim-ruby-refactoring"
+"Bundle "astashov/vim-ruby-debugger"
+"Bundle "ecomba/vim-ruby-refactoring"
 " Bundle "skwp/vim-ruby-conque"
-Bundle "tpope/vim-rails.git"
-Bundle "tpope/vim-rake.git"
-Bundle "tpope/vim-rvm.git"
-Bundle "vim-ruby/vim-ruby.git"
-Bundle "vim-scripts/Specky.git"
+"Bundle "tpope/vim-rails.git"
+"Bundle "tpope/vim-rake.git"
+"Bundle "tpope/vim-rvm.git"
+"Bundle "vim-ruby/vim-ruby.git"
+"Bundle "vim-scripts/Specky.git"
 " https://github.com/tpope/vim-rvm
 "=======================================================================================================
 
