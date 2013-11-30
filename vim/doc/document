@@ -7,7 +7,7 @@
 
 === ag ============================================
 说明：
-ag.vim是vim下一个强大的搜索工具，取代akc。使用ag.vim需要系统预先安装ag
+ag.vim是vim下一个强大的搜索工具，取代ack。使用ag.vim需要系统预先安装ag
 ag地址：https://github.com/ggreer/the_silver_searcher/blob/master/doc/ag.1.md
 
 常用命令：
@@ -39,6 +39,16 @@ H	水平分割窗口打开 不切换焦点
 v	垂直分割窗口打开
 V	垂直分割窗口打开 不切换焦点
 q	关闭
+
+=== vim-phpqa ====================================
+https://github.com/joonty/vim-phpqa
+说明
+PHP常用检测工具
+:Php    语法检测
+:Phpcs  格式代码检测(PHP_CodeSniffer)
+:Phpcc  代码覆盖率检测
+:Phpmc  PHP_PMD语法检测
+:lclose 关闭quickfix窗口
 
 === syntastic ====================================
 说明

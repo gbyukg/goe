@@ -381,6 +381,16 @@ Bundle "airblade/vim-gitgutter"
 "=======================================================================================================
 
 "============================================= PHP =====================================================
+" https://github.com/joonty/vim-phpqa
+"PHP_CodeSniffer http://phpmd.org/   phpunit的code coverage功能整合工具
+Bundle 'joonty/vim-phpqa.git'
+
+Bundle 'stephpy/vim-php-cs-fixer'
+
+" https://github.com/bpearson/vim-phpcs
+" PHP_CodeSniffer检测工具
+" Bundle "bpearson/vim-phpcs"
+
 " https://github.com/joonty/vdebug
 " debug
 " Bundle "joonty/vdebug"
