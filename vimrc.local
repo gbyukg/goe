@@ -3,6 +3,12 @@ set scrolloff=8                 " Minimum lines to keep above and below cursor
 set sidescrolloff=15
 set sidescroll=1
 
+" key mapping {
+    iunmap <CR>
+    nmap <leader>sc :SyntasticCheck<CR>
+    nmap <leader>sr :SyntasticReset<CR>
+" }
+
 " Autoformat {}
     let g:formatprg_args_expr_cppatprg_php = "phpCB"
     let g:formatprg_args_expr_php = '"--space-after-if --space-after-switch --space-after-while --space-before-start-angle-bracket --space-after-end-angle-bracket --extra-padding-for-case-statement --one-true-brace-function-declaration --glue-amperscore --change-shell-comment-to-double-slashes-comment --force-large-php-code-tag --force-true-false-null-contant-lowercase --align-equal-statements --align-equal-statements-to-fixed-pos --comment-rendering-style PEAR %:p"'
@@ -14,12 +20,94 @@ set sidescroll=1
 " }
 
 " syntastic {
-    nmap <leader>sc :SyntasticCheck<CR>
-    nmap <leader>sr :SyntasticReset<CR>
+    " 行号左边状态栏错误标志
+    let g:syntastic_enable_signs=1
+    let g:syntastic_error_symbol='✗'
+    let g:syntastic_warning_symbol='⚠'
+    let g:syntastic_check_on_open=1         " Always check when buffers are opened
+    let g:syntastic_always_populate_loc_list=1 "Always put errors in the location list
+    let g:syntastic_enable_balloons = 1
+    " C语法检测工具
+    let g:syntastic_c_checkers = ['gcc']    " Use gcc as default syntax checker"
+    let g:ycm_global_ycm_extra_conf = '/home/gbyukg/.goe/ycm_extra_conf.py'
+    "let g:loaded_syntastic_c_gcc_checker = 1
+    "let g:syntastic_debug = 1
+    "let g:syntastic_c_checkers = ['make', 'gcc', 'sparse', 'splint']
+    " PHP语法检测工具
+    let g:syntastic_php_checkers = ['phpcs']
+    " JS语法检测工具
+    let g:syntastic_javascript_jshint_conf="/home/gbyukg/.jshintrc"
+    let g:syntastic_javascript_checkers = ['jshint']
+    "let g:syntastic_javascript_checkers = ['eslint']
 " }
 
 " PIV {
     let g:DisableAutoPHPFolding = 1
+" }
+
+" syntastic {
+    let g:UltiSnipsUsePythonVersion = 2
+" }
+
+" youcompleteme {
+" }
+
+" UltiSnips{
+    " UltiSnips completion function that tries to expand a snippet. If there's no
+    " snippet for expanding, it checks for completion window and if it's
+    " shown, selects first element. If there's no completion window it tries to
+    " jump to next placeholder. If there's no placeholder it just returns TAB key 
+    function! g:UltiSnips_Complete()
+        call UltiSnips_ExpandSnippet()
+        if g:ulti_expand_res == 0
+            if pumvisible()
+                return "\<C-n>"
+                "return "\<Enter>"
+            else
+                call UltiSnips_JumpForwards()
+                if g:ulti_jump_forwards_res == 0
+                   return "\<TAB>"
+                endif
+            endif
+        endif
+        return ""
+    endfunction
+
+    au BufEnter * exec "inoremap <silent> " . g:UltiSnipsExpandTrigger . " <C-R>=g:UltiSnips_Complete()<cr>"
+    let g:UltiSnipsJumpForwardTrigger="<tab>"
+    "let g:UltiSnipsExpandTrigger="<Enter>"
+    let g:UltiSnipsExpandTrigger="<C-e>"
+" }
+
+" cscope {
+    if has("cscope")
+            set csto=0                      " First search cscope database, then ctag file 
+            set cst                         " Always use cscope instead of ctag
+            set nocsverb                    " Don't be verbose
+            if filereadable("cscope.out")
+                    cs add cscope.out
+            elseif $CSCOPE_DB != ""
+                    cs add $CSCOPE_DB
+            endif
+            set csverb
+            nmap <C-@>s :cs find s <C-R>=expand("<cword>")<CR><CR> 
+            nmap <C-@>g :cs find g <C-R>=expand("<cword>")<CR><CR> 
+            nmap <C-@>c :cs find c <C-R>=expand("<cword>")<CR><CR> 
+            nmap <C-@>t :cs find t <C-R>=expand("<cword>")<CR><CR> 
+            nmap <C-@>e :cs find e <C-R>=expand("<cword>")<CR><CR> 
+            nmap <C-@>f :cs find f <C-R>=expand("<cfile>")<CR><CR> 
+            nmap <C-@>i :cs find i ^<C-R>=expand("<cfile>")<CR>$<CR>
+            nmap <C-@>d :cs find d <C-R>=expand("<cword>")<CR><CR>
+            " Opens the tag in a new window on the right
+            nmap <C-@>S :rightb vert scs find s <C-R>=expand("<cword>")<CR><CR>
+            nmap <C-@>G :rightb vert scs find g <C-R>=expand("<cword>")<CR><CR>
+            nmap <C-@>C :rightb vert scs find c <C-R>=expand("<cword>")<CR><CR>
+            nmap <C-@>T :rightb vert scs find t <C-R>=expand("<cword>")<CR><CR>
+            nmap <C-@>E :rightb vert scs find e <C-R>=expand("<cword>")<CR><CR>
+            nmap <C-@>F :rightb vert scs find f <C-R>=expand("<cfile>")<CR><CR>
+            nmap <C-@>I :rightb vert scs find i ^<C-R>=expand("<cfile>")<CR>$<CR>
+            nmap <C-@>D :rightb vert scs find d <C-R>=expand("<cword>")<CR><CR>
+    endif
 " }
 
 " 设置gvim字体与主题

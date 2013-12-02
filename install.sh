@@ -1,5 +1,16 @@
 #!/usr/bin/env bash
 
+check_command()
+{
+    for (( i = 0; i < 5; i++ )); do
+        #statements
+    done
+}
+
+check_command "ack ack-grep" "不支持ack"
+
+exit 0
+
 git clone git@github.com:gbyukg/goe.git $HOME/.goe
 ln -s $HOME/.goe/vimrc.before.local $HOME/.vimrc.before.local
 ln -s $HOME/.goe/vimrc.local $HOME/.vimrc.local
@@ -12,7 +23,7 @@ vim +BundleInstall +qall
 
 # 初始化youcompletme插件
 cd ~/.vim/bundle/YouCompleteMe
-./install.sh
+./install.sh --clang-completer
 
 exit 0
 

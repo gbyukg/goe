@@ -11,7 +11,8 @@ if has('gui_running')
         Bundle "vim-scripts/AutoClose"
     endif
 else
-    Bundle 'spf13/vim-autoclose'
+    " Bundle 'spf13/vim-autoclose'
+    Bundle "Townk/vim-autoclose"
 endif
 
 
@@ -45,5 +46,9 @@ Bundle "mhinz/vim-startify"
 Bundle "vim-scripts/LargeFile"
 Bundle "Chiel92/vim-autoformat"
 Bundle "Valloric/YouCompleteMe"
+Bundle "SirVer/ultisnips"
 Bundle "terryma/vim-expand-region"
+Bundle "tpope/vim-endwise.git"
+" Bundle "garbas/vim-snipmate.git"
 " Bundle "vim-scripts/bufexplorer.zip"
+
