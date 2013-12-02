@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-git clone https://github.com/gbyukg/goe $HOME/.goe
+git clone git@github.com:gbyukg/goe.git $HOME/.goe
 ln -s $HOME/.goe/vimrc.before.local $HOME/.vimrc.before.local
 ln -s $HOME/.goe/vimrc.local $HOME/.vimrc.local
 
