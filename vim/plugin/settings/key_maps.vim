@@ -23,9 +23,17 @@ inoremap <silent> <C-s> <Esc>:w<CR>
 nnoremap <silent> <C-a> gg<CR>V<CR>G<CR>
 inoremap <silent> <C-a> <Esc>:w<CR>
 
+nnoremap <silent> q :q<CR>
+nnoremap <silent> <C-q> :q!<CR>
+
 nnoremap <silent> <F7> "+y 
 nnoremap <silent> <F8> "+x
 nnoremap <silent> <F9> "+p
+
+" Syntastic check
+nnoremap <silent> <leader>sc :SyntasticCheck<CR>
+nnoremap <silent> <leader>sr :SyntasticReset<CR>
+nnoremap <silent> <leader>se :Errors<CR>
 
 " Quick Fix 设置
 map <F3> :cw<cr>
@@ -34,8 +42,8 @@ map <F5> :cn<cr>
 
 nnoremap <silent> <leader>t :TagbarToggle<CR>
 
-nnoremap <silent> <Leader>o :OpenSession!<CR>
-nnoremap <silent> <Leader>O :SaveSession!<CR>
+nnoremap <silent> <Leader>os :OpenSession!<CR>
+nnoremap <silent> <Leader>ss :SaveSession!<CR>
 
 " ,q to toggle quickfix window (where you have stuff like GitGrep)
 " ,oq to open it back up (rare)
@@ -44,9 +52,10 @@ nmap <silent> ,qo :copen<CR>
 
 " 跳转到文件最后修改位置处
 nnoremap ,. '.
+" nnoremap <silent> <leader>q '.
 
-nnoremap <silent> ,z :bp<CR>
-nnoremap <silent> ,x :bn<CR>
+nnoremap <silent> <leader>z :bp<CR>
+nnoremap <silent> <leader>x :bn<CR>
 
 " copy current filename into system clipboard - mnemonic: (c)urrent(f)ilename
 " this is helpful to paste someone the path you're looking at
@@ -61,6 +70,7 @@ nmap <silent> ,vr :so %<CR>
 " this to vv and ss
 nnoremap <silent> vv <C-w>v
 nnoremap <silent> ss <C-w>s
+
 
 " Use numbers to pick the tab you want (like iTerm)
 map <silent> <D-1> :tabn 1<cr>
@@ -107,9 +117,9 @@ endif
 
 "=================== buffer explor ==========================
 if exists(":BufExplorer")
-    noremap <silent> <leader>b :BufExplorer<CR>
+    noremap <silent> <leader>B :BufExplorer<CR>
     "noremap <silent> <leader>B :BufExplorerHorizontalSplit<CR>
-    noremap <silent> <leader>B :BufExplorerVerticalSplit<CR>
+    noremap <silent> <leader>b :BufExplorerVerticalSplit<CR>
 endif
 
 "===================== vim-autoformat =======================

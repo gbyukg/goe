@@ -4,6 +4,19 @@
 
 === ctags、taglist、autotag =======================
 
+=== ack ===========================================
+说明：
+文件内容搜索工具
+
+格式：
+:Ack [options] {pattern} [{directory}]
+
+常用命令
+:Ack
+:AckAdd
+:LAck
+:LAckAdd
+:h Ack
 
 === ag ============================================
 说明：
@@ -49,6 +62,21 @@ PHP常用检测工具
 :Phpcc  代码覆盖率检测
 :Phpmc  PHP_PMD语法检测
 :lclose 关闭quickfix窗口
+
+=== NERDTree =====================================
+Ctrl-n 打开关闭控件
+
+=== Ctrlp ========================================
+说明
+Fuzzy file, buffer, mru, tag, etc finder
+
+常用命令
+:CtrlP          在文件中查找
+:CtrlPBuffer    在buffer中查找
+:CtrlPMRU       在MRU中查找
+:CtrlPMixed     在buffer和MRU中查找
+:h Ctrl         查看帮助文档
+默认快捷键      Ctrl-p
 
 === syntastic ====================================
 说明

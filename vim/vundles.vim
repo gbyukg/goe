@@ -23,7 +23,7 @@ Bundle "tpope/vim-bundler"
 
 " https://github.com/chrisbra/color_highlight
 " 根据颜色名字或颜色代码将名字或颜色上色
-Bundle "chrisbra/color_highlight.git"
+" Bundle "chrisbra/color_highlight.git"
 
 " https://github.com/skwp/vim-colors-solarized
 " vim主题，必装
@@ -55,7 +55,7 @@ Bundle "jistr/vim-nerdtree-tabs"
 
 " NERDTree-project
 " https://github.com/vim-scripts/NERD_tree-Project
-Bundle "vim-scripts/NERD_tree-Project"
+" Bundle "vim-scripts/NERD_tree-Project"
 
 " NERDTree-ack
 " https://github.com/vim-scripts/nerdtree-ack
@@ -84,6 +84,9 @@ Bundle "majutsushi/tagbar.git"
 " https://github.com/xolox/vim-easytags
 " tag
 Bundle "xolox/vim-easytags"
+
+"https://github.com/Lokaltog/vim-easymotion
+Bundle "Lokaltog/vim-easymotion"
 
 " https://github.com/vim-scripts/TagHighlight
 " 高亮代码及tag列表
@@ -163,11 +166,11 @@ Bundle "godlygeek/tabular"
 
 " https://github.com/msanders/snipmate.vim
 " 自动完成一些语言中的代码，如for循环等
-" Bundle "garbas/vim-snipmate.git"
+Bundle "garbas/vim-snipmate.git"
 
 " https://github.com/honza/vim-snippets
 " 自动完成一些语言中的代码，如if、for循环等，支持多种语言
-Bundle "honza/vim-snippets"
+" Bundle "honza/vim-snippets"
 
 " https://github.com/nelstrom/vim-visual-star-search
 " 在视图模式下通过选择一段文本，使用*或#在当前文件内进行搜索
@@ -225,6 +228,10 @@ Bundle "vim-scripts/LargeFile"
 " https://github.com/vim-scripts/vimwiki
 " vimwiki 通过vim编辑自己的wiki
 "Bundle "vim-scripts/vimwiki"
+
+" https://github.com/terryma/vim-expand-region
+" Press + to expand the visual selection and _ to shrink it.
+Bundle "terryma/vim-expand-region"
 
 "Bundle "skwp/vim-easymotion"
 "Bundle "vim-scripts/camelcasemotion.git"
@@ -384,8 +391,6 @@ Bundle "airblade/vim-gitgutter"
 " https://github.com/joonty/vim-phpqa
 "PHP_CodeSniffer http://phpmd.org/   phpunit的code coverage功能整合工具
 Bundle 'joonty/vim-phpqa.git'
-
-Bundle 'stephpy/vim-php-cs-fixer'
 
 " https://github.com/bpearson/vim-phpcs
 " PHP_CodeSniffer检测工具
