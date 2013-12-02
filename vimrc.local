@@ -3,43 +3,6 @@ set scrolloff=8                 " Minimum lines to keep above and below cursor
 set sidescrolloff=15
 set sidescroll=1
 
-" 追加插件
-
-Bundle 'scrooloose/nerdtree'
-Bundle 'altercation/vim-colors-solarized'
-Bundle 'spf13/vim-colors'
-Bundle 'tpope/vim-surround'
-" Bundle 'spf13/vim-autoclose'
-Bundle 'kien/ctrlp.vim'
-Bundle 'terryma/vim-multiple-cursors'
-Bundle 'vim-scripts/sessionman.vim'
-Bundle 'matchit.zip'
-if (has("python") || has("python3")) && exists('g:spf13_use_powerline') && !exists('g:spf13_use_old_powerline')
-    Bundle 'Lokaltog/powerline', {'rtp':'/powerline/bindings/vim'}
-elseif exists('g:spf13_use_powerline') && exists('g:spf13_use_old_powerline')
-    Bundle 'Lokaltog/vim-powerline'
-else
-    Bundle 'bling/vim-airline'
-endif
-Bundle 'bling/vim-bufferline'
-Bundle 'Lokaltog/vim-easymotion'
-Bundle 'godlygeek/csapprox'
-Bundle 'jistr/vim-nerdtree-tabs'
-Bundle 'flazz/vim-colorschemes'
-Bundle 'mbbill/undotree'
-Bundle 'myusuf3/numbers.vim'
-Bundle 'nathanaelkane/vim-indent-guides'
-if !exists('g:spf13_no_views')
-    Bundle 'vim-scripts/restore_view.vim'
-endif
-Bundle 'mhinz/vim-signify'
-Bundle 'tpope/vim-abolish.git'
-
-Bundle "brookhong/cscope.vim"
-Bundle "mhinz/vim-startify"
-Bundle "vim-scripts/LargeFile"
-Bundle "Chiel92/vim-autoformat"
-
 " Autoformat {}
     let g:formatprg_args_expr_cppatprg_php = "phpCB"
     let g:formatprg_args_expr_php = '"--space-after-if --space-after-switch --space-after-while --space-before-start-angle-bracket --space-after-end-angle-bracket --extra-padding-for-case-statement --one-true-brace-function-declaration --glue-amperscore --change-shell-comment-to-double-slashes-comment --force-large-php-code-tag --force-true-false-null-contant-lowercase --align-equal-statements --align-equal-statements-to-fixed-pos --comment-rendering-style PEAR %:p"'
@@ -51,8 +14,8 @@ Bundle "Chiel92/vim-autoformat"
 " }
 
 " syntastic {
-    nmap <leader>sc :SyntasticCheck:<CR>
-    nmap <leader>sr :SyntasticReset:<CR>
+    nmap <leader>sc :SyntasticCheck<CR>
+    nmap <leader>sr :SyntasticReset<CR>
 " }
 
 " PIV {

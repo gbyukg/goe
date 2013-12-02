@@ -3,9 +3,16 @@
 git clone git@github.com:gbyukg/goe.git $HOME/.goe
 ln -s $HOME/.goe/vimrc.before.local $HOME/.vimrc.before.local
 ln -s $HOME/.goe/vimrc.local $HOME/.vimrc.local
+ln -s $HOME/.goe/vimrc.bundles.local $HOME/.vimrc.bundles.local
 
 # 安装spf13
 curl https://j.mp/spf13-vim3 -L > spf13-vim.sh && sh spf13-vim.sh
+
+vim +BundleInstall +qall
+
+# 初始化youcompletme插件
+cd ~/.vim/bundle/YouCompleteMe
+./install.sh
 
 exit 0
 
@@ -29,8 +36,8 @@ ln -s $HOME/.goe/vimrc $HOME/.vimrc
 ln -s $HOME/.goe/vim $HOME/.vim
 vim +BundleInstall +qall
 
-#cd ~/.vim/bundle/YouCompleteMe
-#./vimrc_binstall.sh
+cd ~/.vim/bundle/YouCompleteMe
+./install.sh
 
 #安装vim插件
 #source vim/install_vim.sh
