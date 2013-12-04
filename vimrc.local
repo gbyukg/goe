@@ -2,17 +2,71 @@ set scrolljump=0                " Lines to scroll when cursor leaves screen
 set scrolloff=8                 " Minimum lines to keep above and below cursor
 set sidescrolloff=15
 set sidescroll=1
+setlocal nospell
 
 " key mapping {
     iunmap <CR>
-    nmap <leader>sc :SyntasticCheck<CR>
-    nmap <leader>sr :SyntasticReset<CR>
+    nmap <leader>Sc :SyntasticCheck<CR>
+    nmap <leader>Sr :SyntasticReset<CR>
+
+    nnoremap <silent> <C-k>              :wincmd k<CR>
+    nnoremap <silent> <C-j>              :wincmd j<CR>
+    nnoremap <silent> <C-h>              :wincmd h<CR>
+    nnoremap <silent> <C-l>              :wincmd l<CR>
+    inoremap <silent> <C-k>         <Esc>:wincmd k<CR>
+    inoremap <silent> <C-j>         <Esc>:wincmd j<CR>
+    inoremap <silent> <C-h>         <Esc>:wincmd h<CR>
+    inoremap <silent> <C-l>         <Esc>:wincmd l<CR>
+    nnoremap <silent> <C-Up>             :wincmd k<CR>
+    nnoremap <silent> <C-Down>           :wincmd j<CR>
+    nnoremap <silent> <C-Left>           :wincmd h<CR>
+    nnoremap <silent> <C-Right>          :wincmd l<CR>
+    inoremap <silent> <C-Up>        <Esc>:wincmd k<CR>
+    inoremap <silent> <C-Down>      <Esc>:wincmd j<CR>
+    inoremap <silent> <C-Left>      <Esc>:wincmd h<CR>
+    inoremap <silent> <C-Right>     <Esc>:wincmd l<CR>
+
+    " nmap <leader>sl :ViewSession<CR>
+    " nmap <leader>ss :SaveSession!<CR>
+    " nmap <leader>so :OpenSession!<CR>
+    " nmap <leader>sc :CloseSession!<CR>
+
+    nmap <leader>bl :buffers<CR>
+    nmap <leader>bw :bw<CR>
+    nnoremap <silent> <leader>z     :bprevious<CR>
+    nnoremap <silent> <leader>x     :bNext<CR>
+
+    nmap <silent> <C-p> :CtrlP<CR>
+    nmap <silent> <C-b> :CtrlPBuffer<CR>
+    nmap <silent> <C-m> :CtrlPMRU<CR>
+
+    noremap <leader>f :Autoformat<CR><CR>
+
+    map <C-\> :NERDTreeFind<CR>
+
+    command Info execute "echo expand('%:p')"
+
 " }
 
-" Autoformat {}
+" vim-session {
+    let g:session_directory = spf13_consolidated_directory . 'session'
+    let g:session_autosave = 'no'
+    let g:session_autosave = 'yes'
+" }
+
+" NERDTree {
+    "let g:nerdtree_tabs_open_on_gui_startup=1
+    let g:NERDTreeChDirMode = 2
+    if has('gui_running')
+        if has("gui_gtk2")
+            let NERDTreeQuitOnOpen=0
+        endif
+    endif
+" }
+
+" Autoformat {
     let g:formatprg_args_expr_cppatprg_php = "phpCB"
     let g:formatprg_args_expr_php = '"--space-after-if --space-after-switch --space-after-while --space-before-start-angle-bracket --space-after-end-angle-bracket --extra-padding-for-case-statement --one-true-brace-function-declaration --glue-amperscore --change-shell-comment-to-double-slashes-comment --force-large-php-code-tag --force-true-false-null-contant-lowercase --align-equal-statements --align-equal-statements-to-fixed-pos --comment-rendering-style PEAR %:p"'
-
     " 使用pg_format工具格式化SQL
     " :exe "1,$!pg_format %:p"
     let g:formatprg_sql = "pg_format"
@@ -24,12 +78,12 @@ set sidescroll=1
     let g:syntastic_enable_signs=1
     let g:syntastic_error_symbol='✗'
     let g:syntastic_warning_symbol='⚠'
-    let g:syntastic_check_on_open=1         " Always check when buffers are opened
+    " let g:syntastic_check_on_open=1         " Always check when buffers are opened
     let g:syntastic_always_populate_loc_list=1 "Always put errors in the location list
     let g:syntastic_enable_balloons = 1
     " C语法检测工具
     let g:syntastic_c_checkers = ['gcc']    " Use gcc as default syntax checker"
-    let g:ycm_global_ycm_extra_conf = '/home/gbyukg/.goe/ycm_extra_conf.py'
+    let g:ycm_global_ycm_extra_conf = $HOME . '/.goe/ycm_extra_conf.py'
     "let g:loaded_syntastic_c_gcc_checker = 1
     "let g:syntastic_debug = 1
     "let g:syntastic_c_checkers = ['make', 'gcc', 'sparse', 'splint']
@@ -75,7 +129,6 @@ set sidescroll=1
 
     au BufEnter * exec "inoremap <silent> " . g:UltiSnipsExpandTrigger . " <C-R>=g:UltiSnips_Complete()<cr>"
     let g:UltiSnipsJumpForwardTrigger="<tab>"
-    "let g:UltiSnipsExpandTrigger="<Enter>"
     let g:UltiSnipsExpandTrigger="<C-e>"
 " }
 
@@ -109,6 +162,52 @@ set sidescroll=1
             nmap <C-@>D :rightb vert scs find d <C-R>=expand("<cword>")<CR><CR>
     endif
 " }
+
+" minibufexpl{
+    if exists(":MBEbn")
+        let g:miniBufExplorerAutoStart = 1
+        let g:miniBufExplBuffersNeeded = 0
+        let g:miniBufExplMapWindowNavVim = 1
+        let g:miniBufExplMapWindowNavArrows = 1
+        let g:miniBufExplMapCTabSwitchBufs = 1
+        let g:miniBufExplModSelTarget = 1
+        let g:miniBufExplUseSingleClick = 1
+        let g:miniBufExplCycleArroun = 1
+        let g:miniBufExplCloseOnSelect = 0
+        let g:miniBufExplBRSplit = 0
+
+        noremap <silent> <C-TAB>   :MBEbn<CR>
+        noremap <silent> <C-S-TAB> :MBEbp<CR>
+        inoremap <silent> <C-TAB>   <Esc>:MBEbn<CR>
+        inoremap <silent> <C-S-TAB> <Esc>:MBEbp<CR>
+    endif
+" }
+
+" vim-airline{
+    "let g:airline#extensions#tabline#buffer_min_count = 0
+    let g:airline_symbols = {}
+    let g:airline_left_sep = '⮀'
+    let g:airline_left_alt_sep = '⮁'
+    let g:airline_right_sep = '⮂'
+    let g:airline_right_alt_sep = '⮃'
+    let g:airline_symbols.branch = '⭠'
+    let g:airline_symbols.readonly = '⭤'
+    let g:airline_symbols.linenr = '⭡'
+    "let g:airline_theme='powerlineish'
+    "let g:airline_theme='murmur'
+    let g:airline_theme='bubblegum'
+"}
+
+" startify{
+    " 设定读取session的路径
+    let g:startify_session_dir = spf13_consolidated_directory . 'session'
+    " 显示保存的session
+    let g:startify_show_sessions = 1
+    " 显示的条数
+    let g:startify_show_files_number = 15
+    let g:startify_skiplist_server = []
+"}
+
 
 " 设置gvim字体与主题
 if has('gui_running')

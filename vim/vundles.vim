@@ -33,6 +33,9 @@ Bundle "skwp/vim-colors-solarized"
 " 美化vim状态栏，必装
 Bundle "Lokaltog/vim-powerline"
 
+" https://github.com/jmcantrell/vim-virtualenv
+Bundle "jmcantrell/vim-virtualenv"
+
 " https://github.com/mileszs/ack.vim
 " 搜索工具
 Bundle "mileszs/ack.vim"

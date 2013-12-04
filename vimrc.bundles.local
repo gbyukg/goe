@@ -1,25 +1,109 @@
-" 追加插件
+" 主题插件{
+    Bundle 'spf13/vim-colors'
+    Bundle 'altercation/vim-colors-solarized'
+    Bundle 'flazz/vim-colorschemes'
+    Bundle 'godlygeek/csapprox'
+" }
 
-Bundle 'scrooloose/nerdtree'
-Bundle 'altercation/vim-colors-solarized'
-Bundle 'spf13/vim-colors'
-Bundle 'tpope/vim-surround'
+" 目录树{
+    Bundle 'scrooloose/nerdtree'
+    Bundle 'jistr/vim-nerdtree-tabs'
+" }
 
+" 文件、buffer、mub等文件搜索{
+    Bundle 'kien/ctrlp.vim'
+" }
 
-if has('gui_running')
-    if has("gui_gtk2")
-        Bundle "vim-scripts/AutoClose"
+" 文件操作历史{
+    Bundle 'mbbill/undotree'
+" }
+
+" 快速修改指定字符串的包围符号{
+    Bundle 'tpope/vim-surround'
+" }
+
+Bundle "brookhong/cscope.vim"
+
+" 打开空白页显示一些最近打开文件信息等{
+    Bundle "mhinz/vim-startify"
+" }
+
+" 格式化代码工具{
+    Bundle "Chiel92/vim-autoformat"
+" }
+
+" C++编写的强大的自动补充插件 {
+    Bundle "Valloric/YouCompleteMe"
+" }
+
+" 代码片段不全工具{
+    Bundle "SirVer/ultisnips"
+" }
+
+" 通过使用+、-来扩充visual选择区域 {
+    Bundle "terryma/vim-expand-region"
+" }
+
+" 自动为语句添加结束标志{
+    Bundle "tpope/vim-endwise.git"
+" }
+
+" 类似CtrlP的搜索工具{
+    Bundle "Shougo/unite.vim"
+" }
+
+" session管理工具{
+    " session所需库文件
+    Bundle "xolox/vim-misc"
+    Bundle "xolox/vim-session"
+" }
+
+" 快速定位到当前页面中的指定位置 {
+    Bundle 'Lokaltog/vim-easymotion'
+" }
+
+" 显示相对行号{
+    Bundle 'myusuf3/numbers.vim'
+"}
+
+" 同时处理查找出的多出相同字符串 {}
+    Bundle 'terryma/vim-multiple-cursors'
+" }
+" 使%能够匹配更多内容{
+    Bundle 'matchit.zip'
+" }
+
+" 在行号之前显示文件改动信息{
+    Bundle 'mhinz/vim-signify'
+" }
+" Bundle 'tpope/vim-abolish.git'
+
+" 显示层级关系{
+    Bundle 'nathanaelkane/vim-indent-guides'
+" }
+
+" 能够加速打开大文件速度{
+    Bundle "vim-scripts/LargeFile"
+" }
+
+" Bundle "techlivezheng/vim-plugin-minibufexpl"
+" Bundle 'bling/vim-bufferline'
+" Bundle "garbas/vim-snipmate.git"
+" Bundle "vim-scripts/bufexplorer.zip"
+" Bundle 'vim-scripts/sessionman.vim'
+
+" 括号、引号等自动不全{
+    " Gvim 中只能使用AutoClose, 否则无法输入中文
+    if has('gui_running')
+        if has("gui_gtk2")
+            Bundle "vim-scripts/AutoClose"
+        endif
+    else
+        Bundle 'spf13/vim-autoclose'
+        " Bundle "Townk/vim-autoclose"
     endif
-else
-    " Bundle 'spf13/vim-autoclose'
-    Bundle "Townk/vim-autoclose"
-endif
+" }
 
-
-Bundle 'kien/ctrlp.vim'
-Bundle 'terryma/vim-multiple-cursors'
-Bundle 'vim-scripts/sessionman.vim'
-Bundle 'matchit.zip'
 if (has("python") || has("python3")) && exists('g:spf13_use_powerline') && !exists('g:spf13_use_old_powerline')
     Bundle 'Lokaltog/powerline', {'rtp':'/powerline/bindings/vim'}
 elseif exists('g:spf13_use_powerline') && exists('g:spf13_use_old_powerline')
@@ -27,28 +111,9 @@ elseif exists('g:spf13_use_powerline') && exists('g:spf13_use_old_powerline')
 else
     Bundle 'bling/vim-airline'
 endif
-Bundle 'bling/vim-bufferline'
-Bundle 'Lokaltog/vim-easymotion'
-Bundle 'godlygeek/csapprox'
-Bundle 'jistr/vim-nerdtree-tabs'
-Bundle 'flazz/vim-colorschemes'
-Bundle 'mbbill/undotree'
-Bundle 'myusuf3/numbers.vim'
-Bundle 'nathanaelkane/vim-indent-guides'
+
 if !exists('g:spf13_no_views')
+    " 能够自动保存当前文件鼠标所在位置和文件信息等
     Bundle 'vim-scripts/restore_view.vim'
 endif
-Bundle 'mhinz/vim-signify'
-Bundle 'tpope/vim-abolish.git'
-
-Bundle "brookhong/cscope.vim"
-Bundle "mhinz/vim-startify"
-Bundle "vim-scripts/LargeFile"
-Bundle "Chiel92/vim-autoformat"
-Bundle "Valloric/YouCompleteMe"
-Bundle "SirVer/ultisnips"
-Bundle "terryma/vim-expand-region"
-Bundle "tpope/vim-endwise.git"
-" Bundle "garbas/vim-snipmate.git"
-" Bundle "vim-scripts/bufexplorer.zip"
 

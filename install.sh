@@ -56,6 +56,9 @@ cd ~/.vim/bundle/YouCompleteMe
 # 安装ag
 # https://github.com/ggreer/the_silver_searcher
 
+# 安装phpCS
+php格式化工具
+
 #安装js-beautify
 #http://github.com/einars/js-beautify
 #首先需要安装 python的pip

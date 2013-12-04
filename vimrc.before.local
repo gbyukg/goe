@@ -1,3 +1,18 @@
 if !exists('g:spf13_bundle_groups')
-    let g:spf13_bundle_groups=['general-mysqlf', 'youcompleteme', 'programming', 'php', 'ruby', 'python', 'go', 'twig', 'javascript', 'haskell', 'html', 'misc', 'scala']
+    let g:spf13_bundle_groups = ['general-myself', 'youcompleteme', 'programming', 'php', 'ruby', 'python', 'go', 'twig', 'javascript', 'haskell', 'html', 'misc', 'scala']
 endif
+
+let g:spf13_no_easyWindows = 1
+
+" 修改vimbackup, vimviews, vimundo, 和 vimswap 文件保存路径
+let vimcache = $HOME . '/.vimcache/'
+if !isdirectory(vimcache)
+    call mkdir(vimcache)
+endif
+" 创建session文件夹
+if !isdirectory(vimcache . 'session/')
+    call mkdir(vimcache . 'session/')
+endif
+
+let g:spf13_consolidated_directory = vimcache
+
