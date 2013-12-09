@@ -86,6 +86,8 @@ Bundle "brookhong/cscope.vim"
     Bundle "vim-scripts/LargeFile"
 " }
 
+Bundle "joonty/vdebug"
+
 " Bundle "techlivezheng/vim-plugin-minibufexpl"
 " Bundle 'bling/vim-bufferline'
 " Bundle "garbas/vim-snipmate.git"

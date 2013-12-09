@@ -5,6 +5,7 @@
 ``.`                            最后修改指定位置  
 `,f0-,f9`                       :set foldlevel0-9  
 `,/`                            是否高亮显示查询  
+`:lclose`                       关闭错误窗口  
 `<S-<>`、`<S->>`                所有移动行  
 `<leader>ew`                    :e %%  
 `<leader>es`                    :sp %%  
