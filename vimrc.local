@@ -42,7 +42,8 @@ setlocal nospell
 
     noremap <leader>f :Autoformat<CR><CR>
 
-    map <C-\> :NERDTreeFind<CR>
+    "map <C-\> :NERDTreeFind<CR>
+    "map <C-S-E> :NERDTreeFind<CR>
 
     command Info execute "echo expand('%:p')"
 
@@ -143,23 +144,23 @@ setlocal nospell
                     cs add $CSCOPE_DB
             endif
             set csverb
-            nmap <C-@>s :cs find s <C-R>=expand("<cword>")<CR><CR> 
-            nmap <C-@>g :cs find g <C-R>=expand("<cword>")<CR><CR> 
-            nmap <C-@>c :cs find c <C-R>=expand("<cword>")<CR><CR> 
-            nmap <C-@>t :cs find t <C-R>=expand("<cword>")<CR><CR> 
-            nmap <C-@>e :cs find e <C-R>=expand("<cword>")<CR><CR> 
-            nmap <C-@>f :cs find f <C-R>=expand("<cfile>")<CR><CR> 
-            nmap <C-@>i :cs find i ^<C-R>=expand("<cfile>")<CR>$<CR>
-            nmap <C-@>d :cs find d <C-R>=expand("<cword>")<CR><CR>
-            " Opens the tag in a new window on the right
-            nmap <C-@>S :rightb vert scs find s <C-R>=expand("<cword>")<CR><CR>
-            nmap <C-@>G :rightb vert scs find g <C-R>=expand("<cword>")<CR><CR>
-            nmap <C-@>C :rightb vert scs find c <C-R>=expand("<cword>")<CR><CR>
-            nmap <C-@>T :rightb vert scs find t <C-R>=expand("<cword>")<CR><CR>
-            nmap <C-@>E :rightb vert scs find e <C-R>=expand("<cword>")<CR><CR>
-            nmap <C-@>F :rightb vert scs find f <C-R>=expand("<cfile>")<CR><CR>
-            nmap <C-@>I :rightb vert scs find i ^<C-R>=expand("<cfile>")<CR>$<CR>
-            nmap <C-@>D :rightb vert scs find d <C-R>=expand("<cword>")<CR><CR>
+            "nmap <C-@>s :cs find s <C-R>=expand("<cword>")<CR><CR> 
+            "nmap <C-@>g :cs find g <C-R>=expand("<cword>")<CR><CR> 
+            "nmap <C-@>c :cs find c <C-R>=expand("<cword>")<CR><CR> 
+            "nmap <C-@>t :cs find t <C-R>=expand("<cword>")<CR><CR> 
+            "nmap <C-@>e :cs find e <C-R>=expand("<cword>")<CR><CR> 
+            "nmap <C-@>f :cs find f <C-R>=expand("<cfile>")<CR><CR> 
+            "nmap <C-@>i :cs find i ^<C-R>=expand("<cfile>")<CR>$<CR>
+            "nmap <C-@>d :cs find d <C-R>=expand("<cword>")<CR><CR>
+            "" Opens the tag in a new window on the right
+            "nmap <C-@>S :rightb vert scs find s <C-R>=expand("<cword>")<CR><CR>
+            "nmap <C-@>G :rightb vert scs find g <C-R>=expand("<cword>")<CR><CR>
+            "nmap <C-@>C :rightb vert scs find c <C-R>=expand("<cword>")<CR><CR>
+            "nmap <C-@>T :rightb vert scs find t <C-R>=expand("<cword>")<CR><CR>
+            "nmap <C-@>E :rightb vert scs find e <C-R>=expand("<cword>")<CR><CR>
+            "nmap <C-@>F :rightb vert scs find f <C-R>=expand("<cfile>")<CR><CR>
+            "nmap <C-@>I :rightb vert scs find i ^<C-R>=expand("<cfile>")<CR>$<CR>
+            "nmap <C-@>D :rightb vert scs find d <C-R>=expand("<cword>")<CR><CR>
     endif
 " }
 
@@ -231,6 +232,17 @@ setlocal nospell
         \    "eval_under_cursor" : "<F11>",
         \    "eval_visual" : "<Leader>e",
         \}
+" }
+
+" CtrlP{
+    let g:ctrlp_cache_dir = spf13_consolidated_directory . 'ctrlp'
+    let g:ctrlp_max_files = 0
+    let g:ctrlp_max_depth = 0
+    let g:ctrlp_mruf_max = 250
+    " 只显示当前目录下的最近打开过的文件
+    let g:ctrlp_mruf_relative = 1
+    let g:ctrlp_prompt_mappings = { 'ToggleMRURelative()': ['<F3>'] }
+    unmap <CR>
 " }
 
 " 设置gvim字体与主题

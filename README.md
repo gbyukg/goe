@@ -51,6 +51,9 @@
 `<leader>gg`                    :SignifyToggle<CR>  
 `:Info`                         显示当前文件路径信息
 
+**buffer**
+`buffers`:
+
 插件注释
 ===============================================
 
@@ -143,4 +146,31 @@ session操作
 
     :NumbersToggle      # 打开/关闭该功能
     :NumbersOnOff       # 关闭该功能
+
+[vim-scripts/cscope.vim](https://github.com/vim-scripts/cscope.vim)
+---------------------------------
+#####说明:
+vim cscope插件
+'s'   symbol: find all references to the token under cursor
+'g'   global: find global definition(s) of the token under cursor
+'c'   calls:  find all calls to the function name under cursor
+'t'   text:   find all instances of the text under cursor
+'e'   egrep:  egrep search for the word under cursor
+'f'   file:   open the filename under cursor
+'i'   includes: find files that include the filename under cursor
+'d'   called: find functions that function under cursor calls
+
+#####常用命令
+`<leader>fs`                call CscopeFind('s', expand('<cword>'))<CR>
+`<leader>fg`                call CscopeFind('g', expand('<cword>'))<CR>
+`<leader>fd`                call CscopeFind('d', expand('<cword>'))<CR>
+`<leader>fc`                call CscopeFind('c', expand('<cword>'))<CR>
+`<leader>ft`                call CscopeFind('t', expand('<cword>'))<CR>
+`<leader>fe`                call CscopeFind('e', expand('<cword>'))<CR>
+`<leader>ff`                call CscopeFind('f', expand('<cword>'))<CR>
+`<leader>fi`                call CscopeFind('i', expand('<cword>'))<CR>
+`<leader>l`                 call ToggleLocationList()<CR>
+`CscopeClear`               删除所有cscope数据库
+`CscopeList`                列出所有cscope数据库
+`CscopeGen`                 可以指定某个cscope数据库路径来刷新该数据库, 若没有指定cscope数据库, 现有的cacope数据库会被重新生成
 
