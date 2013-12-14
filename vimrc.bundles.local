@@ -36,7 +36,7 @@ Bundle "brookhong/cscope.vim"
     Bundle "Valloric/YouCompleteMe"
 " }
 
-" 代码片段不全工具{
+" 代码片段补全工具{
     Bundle "SirVer/ultisnips"
 " }
 
@@ -86,10 +86,21 @@ Bundle "brookhong/cscope.vim"
     Bundle "vim-scripts/LargeFile"
 " }
 
+" Functions to toggle the [Location List] and the [Quickfix List] windows{
+    Bundle "milkypostman/vim-togglelist"
+" }
+
+" 括号高亮 {
+    Bundle "kien/rainbow_parentheses.vim"
+" }
+
+" taglist {
+    " Bundle "vim-scripts/taglist.vim"
+" }
 Bundle "joonty/vdebug"
+Bundle 'bling/vim-bufferline'
 
 " Bundle "techlivezheng/vim-plugin-minibufexpl"
-" Bundle 'bling/vim-bufferline'
 " Bundle "garbas/vim-snipmate.git"
 " Bundle "vim-scripts/bufexplorer.zip"
 " Bundle 'vim-scripts/sessionman.vim'

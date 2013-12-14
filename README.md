@@ -22,6 +22,8 @@
 `,sc`                           语法检测  
 `,sf`                           重置语法检测结果  
 :Errors                         显示错误输出框  
+`<leader>q`                     打开/关闭Locationlist
+`<leader>l`                     打开/关闭QuickFix windown
 
 `<Leader>a&`                    :Tabularize /&<CR>  
 `<Leader>a&`                    :Tabularize /&<CR>  
@@ -38,7 +40,7 @@
 `<Leader>a<Bar>`                :Tabularize /<Bar><CR>  
 `<Leader>a<Bar>`                :Tabularize /<Bar><CR>  
 
-**git**
+**git**  
 `<leader>gs`                    :Gstatus<CR>  
 `<leader>gd`                    :Gdiff<CR>  
 `<leader>gc`                    :Gcommit<CR>  
@@ -51,8 +53,13 @@
 `<leader>gg`                    :SignifyToggle<CR>  
 `:Info`                         显示当前文件路径信息
 
-**buffer**
+**buffer**  
 `buffers`:
+
+**cscope**  
+`:cs add`
+`:cs show`
+`:cs find g XXXXX`
 
 插件注释
 ===============================================
@@ -81,6 +88,8 @@ session操作
 `:CtrlPBuffer`                              在buffer中搜索  
 `:CtrlPMRU`                                 在MRU中搜索文件  
 `:CtrlPMixed`                               同上在以上两种情况下搜索  
+`:ClearAllCtrlPCaches`                      删除所有缓存
+`:ClearCtrlPCache`                          删除缓存
 **Ctrl窗口**  
 `<F5>`                                      刷新缓存  
 `<c-f>`、`<c-b>`                            在多个搜索模式中转换  

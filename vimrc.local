@@ -7,7 +7,7 @@ setlocal nospell
 " key mapping {
     iunmap <CR>
     nmap <leader>Sc :SyntasticCheck<CR>
-    nmap <leader>Sr :SyntasticReset<CR>
+    nmap <F5> :SyntasticReset<CR>
 
     nnoremap <silent> <C-k>              :wincmd k<CR>
     nnoremap <silent> <C-j>              :wincmd j<CR>
@@ -26,6 +26,8 @@ setlocal nospell
     inoremap <silent> <C-Left>      <Esc>:wincmd h<CR>
     inoremap <silent> <C-Right>     <Esc>:wincmd l<CR>
 
+    " nnoremap <silent> <C-y>          "+y<CR>
+    " nnoremap <silent> <C-p>          "+p<CR>
     " nmap <leader>sl :ViewSession<CR>
     " nmap <leader>ss :SaveSession!<CR>
     " nmap <leader>so :OpenSession!<CR>
@@ -33,8 +35,11 @@ setlocal nospell
 
     nmap <leader>bl :buffers<CR>
     nmap <leader>bw :bw<CR>
-    nnoremap <silent> <leader>z     :bprevious<CR>
-    nnoremap <silent> <leader>x     :bNext<CR>
+    noremap <silent> <A-RIGHT>   :bprevious<CR>
+    noremap <silent> <A-LEFT> :bNext<CR>
+    inoremap <silent> <A-RIGHT>   <Esc>:bprevious<CR>
+    inoremap <silent> <A-LEFT> <Esc>:bNext<CR>
+    nmap <leader>bb :Unite buffer<CR>
 
     nmap <silent> <C-p> :CtrlP<CR>
     nmap <silent> <C-b> :CtrlPBuffer<CR>
@@ -42,16 +47,16 @@ setlocal nospell
 
     noremap <leader>f :Autoformat<CR><CR>
 
-    "map <C-\> :NERDTreeFind<CR>
-    "map <C-S-E> :NERDTreeFind<CR>
+    if !exists("g:toggle_list_no_mappings")
+        nmap <F3> :call ToggleLocationList()<CR>
+        nmap <F4> :call ToggleQuickfixList()<CR>
+    endif
 
     command Info execute "echo expand('%:p')"
-
 " }
 
 " vim-session {
     let g:session_directory = spf13_consolidated_directory . 'session'
-    let g:session_autosave = 'no'
     let g:session_autosave = 'yes'
 " }
 
@@ -177,10 +182,10 @@ setlocal nospell
         let g:miniBufExplCloseOnSelect = 0
         let g:miniBufExplBRSplit = 0
 
-        noremap <silent> <C-TAB>   :MBEbn<CR>
-        noremap <silent> <C-S-TAB> :MBEbp<CR>
-        inoremap <silent> <C-TAB>   <Esc>:MBEbn<CR>
-        inoremap <silent> <C-S-TAB> <Esc>:MBEbp<CR>
+        noremap <silent> <A-RIGHT>   :MBEbn<CR>
+        noremap <silent> <A-LEFT> :MBEbp<CR>
+        inoremap <silent> <A-RIGHT>   <Esc>:MBEbn<CR>
+        inoremap <silent> <A-LEFT> <Esc>:MBEbp<CR>
     endif
 " }
 
@@ -250,7 +255,7 @@ if has('gui_running')
     if has("gui_gtk2")
         set guifont=\Consolas\ for\ Powerline\ Regular\ 13,Andale\ Mono\ Regular\ 12,Menlo\ Regular\ 15,Consolas\ Regular\ 16,Courier\ New\ Regular\ 18
         " http://vimcolorschemetest.googlecode.com/svn/html/index-html.html
-        :color nightshimmer "asmdev navajo-night eclm_wombat darkslategray asmdev
+        :color bensday "asu1dark asmdev nightshimmer asmdev navajo-night eclm_wombat darkslategray asmdev
     endif
 endif
 
