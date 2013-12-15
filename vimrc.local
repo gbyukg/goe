@@ -256,6 +256,9 @@ if has('gui_running')
         set guifont=\Consolas\ for\ Powerline\ Regular\ 13,Andale\ Mono\ Regular\ 12,Menlo\ Regular\ 15,Consolas\ Regular\ 16,Courier\ New\ Regular\ 18
         " http://vimcolorschemetest.googlecode.com/svn/html/index-html.html
         :color bensday "asu1dark asmdev nightshimmer asmdev navajo-night eclm_wombat darkslategray asmdev
+    elseif has("gui_macvim")
+        set guifont=Andale\ Mono\ Regular:h14,Menlo\ Regular:h15,Consolas\ Regular:h16,Courier\ New\ Regular:h18
+        :color bensday "asu1dark asmdev nightshimmer asmdev navajo-night eclm_wombat darkslategray asmdev
     endif
 endif
 
