@@ -26,13 +26,6 @@ setlocal nospell
     inoremap <silent> <C-Left>      <Esc>:wincmd h<CR>
     inoremap <silent> <C-Right>     <Esc>:wincmd l<CR>
 
-    " nnoremap <silent> <C-y>          "+y<CR>
-    " nnoremap <silent> <C-p>          "+p<CR>
-    " nmap <leader>sl :ViewSession<CR>
-    " nmap <leader>ss :SaveSession!<CR>
-    " nmap <leader>so :OpenSession!<CR>
-    " nmap <leader>sc :CloseSession!<CR>
-
     nmap <leader>bl :buffers<CR>
     nmap <leader>bw :bw<CR>
     noremap <silent> <A-RIGHT>   :bprevious<CR>
@@ -250,12 +243,28 @@ setlocal nospell
     unmap <CR>
 " }
 
+:function ToggleWrap()
+: if (&wrap == 1)
+:   if (&linebreak == 0)
+:     set linebreak
+:   else
+:     set nowrap
+:   endif
+: else
+:   set wrap
+:   set nolinebreak
+: endif
+:endfunction
+map <F6> :call ToggleWrap()<CR>
+
 " 设置gvim字体与主题
 if has('gui_running')
     if has("gui_gtk2")
         set guifont=\Consolas\ for\ Powerline\ Regular\ 13,Andale\ Mono\ Regular\ 12,Menlo\ Regular\ 15,Consolas\ Regular\ 16,Courier\ New\ Regular\ 18
         " http://vimcolorschemetest.googlecode.com/svn/html/index-html.html
         :color bensday "asu1dark asmdev nightshimmer asmdev navajo-night eclm_wombat darkslategray asmdev
+        " 最大化窗口
+        set lines=999 columns=999
     elseif has("gui_macvim")
         set guifont=Andale\ Mono\ Regular:h14,Menlo\ Regular:h15,Consolas\ Regular:h16,Courier\ New\ Regular:h18
         :color bensday "asu1dark asmdev nightshimmer asmdev navajo-night eclm_wombat darkslategray asmdev
