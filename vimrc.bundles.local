@@ -3,6 +3,7 @@
     Bundle 'altercation/vim-colors-solarized'
     Bundle 'flazz/vim-colorschemes'
     Bundle 'godlygeek/csapprox'
+    Bundle "daylerees/colour-schemes"
 " }
 
 " 目录树{
@@ -96,6 +97,10 @@ Bundle "brookhong/cscope.vim"
 
 " taglist {
     " Bundle "vim-scripts/taglist.vim"
+" }
+
+" json format {
+    Bundle "alfredodeza/jacinto.vim"
 " }
 Bundle "joonty/vdebug"
 Bundle 'bling/vim-bufferline'

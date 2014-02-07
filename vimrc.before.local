@@ -2,7 +2,7 @@
 if !exists('g:spf13_bundle_groups')
     let g:spf13_bundle_groups = ['general-myself', 'youcompleteme', 'programming', 'php', 'javascript', 'html']
 endif
-
+let g:spf13_keep_trailing_whitespace = 1
 let g:spf13_no_easyWindows = 1
 
 " 禁止自动修改目录为当前文件所在目录

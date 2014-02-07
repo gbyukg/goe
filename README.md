@@ -61,6 +61,10 @@
 `:cs show`
 `:cs find g XXXXX`
 
+gf	 open in the same window ("goto file")  
+<c-w>f	 open in a new window (Ctrl-w f)  
+<c-w>gf	 open in a new tab (Ctrl-w gf)  
+
 插件注释
 ===============================================
 
@@ -160,26 +164,39 @@ session操作
 ---------------------------------
 #####说明:
 vim cscope插件
-'s'   symbol: find all references to the token under cursor
-'g'   global: find global definition(s) of the token under cursor
-'c'   calls:  find all calls to the function name under cursor
-'t'   text:   find all instances of the text under cursor
-'e'   egrep:  egrep search for the word under cursor
-'f'   file:   open the filename under cursor
-'i'   includes: find files that include the filename under cursor
-'d'   called: find functions that function under cursor calls
+'s'   symbol: find all references to the token under cursor  
+'g'   global: find global definition(s) of the token under cursor  
+'c'   calls:  find all calls to the function name under cursor  
+'t'   text:   find all instances of the text under cursor  
+'e'   egrep:  egrep search for the word under cursor  
+'f'   file:   open the filename under cursor  
+'i'   includes: find files that include the filename under cursor  
+'d'   called: find functions that function under cursor calls  
 
 #####常用命令
-`<leader>fs`                call CscopeFind('s', expand('<cword>'))<CR>
-`<leader>fg`                call CscopeFind('g', expand('<cword>'))<CR>
-`<leader>fd`                call CscopeFind('d', expand('<cword>'))<CR>
-`<leader>fc`                call CscopeFind('c', expand('<cword>'))<CR>
-`<leader>ft`                call CscopeFind('t', expand('<cword>'))<CR>
-`<leader>fe`                call CscopeFind('e', expand('<cword>'))<CR>
-`<leader>ff`                call CscopeFind('f', expand('<cword>'))<CR>
-`<leader>fi`                call CscopeFind('i', expand('<cword>'))<CR>
-`<leader>l`                 call ToggleLocationList()<CR>
-`CscopeClear`               删除所有cscope数据库
-`CscopeList`                列出所有cscope数据库
-`CscopeGen`                 可以指定某个cscope数据库路径来刷新该数据库, 若没有指定cscope数据库, 现有的cacope数据库会被重新生成
+`<leader>fs`                call CscopeFind('s', expand('<cword>'))  
+`<leader>fg`                call CscopeFind('g', expand('<cword>'))  
+`<leader>fd`                call CscopeFind('d', expand('<cword>'))  
+`<leader>fc`                call CscopeFind('c', expand('<cword>'))  
+`<leader>ft`                call CscopeFind('t', expand('<cword>'))  
+`<leader>fe`                call CscopeFind('e', expand('<cword>'))  
+`<leader>ff`                call CscopeFind('f', expand('<cword>'))  
+`<leader>fi`                call CscopeFind('i', expand('<cword>'))  
+`<leader>l`                 call ToggleLocationList()  
+`CscopeClear`               删除所有cscope数据库  
+`CscopeList`                列出所有cscope数据库  
+`CscopeGen`                 可以指定某个cscope数据库路径来刷新该数据库, 若没有指定cscope数据库, 现有的cacope数据库会被重新生成  
+
+[alfredodeza/jacinto.vim](https://github.com/alfredodeza/jacinto.vim)
+---------------------------------
+#####说明：
+json格式化插件
+
+#####常用命令
+`:Jacinto`可选项：  
+validate
+format
+syntax
+version
+
 
