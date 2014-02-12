@@ -83,6 +83,13 @@ Bundle "brookhong/cscope.vim"
     Bundle 'nathanaelkane/vim-indent-guides'
 " }
 
+" VIM内嵌程序，如shell {
+"    Bundle "vim-scripts/Conque-Shell"
+    Bundle "Shougo/vimproc.vim"
+    Bundle "Shougo/vimshell.vim"
+" }
+
+
 " 能够加速打开大文件速度{
     Bundle "vim-scripts/LargeFile"
 " }
@@ -104,6 +111,7 @@ Bundle "brookhong/cscope.vim"
 " }
 Bundle "joonty/vdebug"
 Bundle 'bling/vim-bufferline'
+Bundle "jeetsukumaran/vim-buffergator"
 
 " Bundle "techlivezheng/vim-plugin-minibufexpl"
 " Bundle "garbas/vim-snipmate.git"

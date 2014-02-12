@@ -7,6 +7,7 @@
 `,/`                            是否高亮显示查询  
 `:lclose`                       关闭错误窗口  
 `<S-<>`、`<S->>`                所有移动行  
+`<A-left>`、`<A-right>`         移动到下/上一个buffer  
 `<leader>ew`                    :e %%  
 `<leader>es`                    :sp %%  
 `<leader>ev`                    :vsp %%  
@@ -199,4 +200,21 @@ format
 syntax
 version
 
+[Shougo/vimshell.vim](https://github.com/Shougo/vimshell.vim)
+---
+#####说明：
+VIM内嵌Shell
+
+#####常用命令：
+
+[jeetsukumaran/vim-buffergator](https://github.com/jeetsukumaran/vim-buffergator)
+---
+####说明：
+buffer列表
+
+####常用命令
+`<leader>b`                 打开buffer列表  
+`<C-V>`                     竖屏打开buffer  
+`<C-S>`                     横屏打开buffer  
+`<C-T>`                     新TAB中打开buffer  
 
