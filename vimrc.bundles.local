@@ -64,7 +64,7 @@ Bundle "brookhong/cscope.vim"
 " }
 
 " 显示相对行号{
-    Bundle 'myusuf3/numbers.vim'
+    "Bundle 'myusuf3/numbers.vim'
 "}
 
 " 同时处理查找出的多出相同字符串 {}
@@ -85,10 +85,9 @@ Bundle "brookhong/cscope.vim"
 
 " VIM内嵌程序，如shell {
 "    Bundle "vim-scripts/Conque-Shell"
-    Bundle "Shougo/vimproc.vim"
-    Bundle "Shougo/vimshell.vim"
+    "Bundle "Shougo/vimproc.vim"
+    "Bundle "Shougo/vimshell.vim"
 " }
-
 
 " 能够加速打开大文件速度{
     Bundle "vim-scripts/LargeFile"
@@ -109,6 +108,11 @@ Bundle "brookhong/cscope.vim"
 " json format {
     Bundle "alfredodeza/jacinto.vim"
 " }
+
+" joonty/vim-phpqa {
+    Bundle "joonty/vim-phpqa"
+" }
+
 Bundle "joonty/vdebug"
 Bundle 'bling/vim-bufferline'
 Bundle "jeetsukumaran/vim-buffergator"

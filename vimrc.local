@@ -77,21 +77,43 @@ setlocal nospell
     let g:syntastic_enable_signs=1
     let g:syntastic_error_symbol='✗'
     let g:syntastic_warning_symbol='⚠'
-    " let g:syntastic_check_on_open=1         " Always check when buffers are opened
+    let g:syntastic_auto_loc_list = 1
     let g:syntastic_always_populate_loc_list=1 "Always put errors in the location list
     let g:syntastic_enable_balloons = 1
+    let g:syntastic_debug = 1
+    "let g:syntastic_check_on_open=1         " Always check when buffers are opened
+
     " C语法检测工具
     let g:syntastic_c_checkers = ['gcc']    " Use gcc as default syntax checker"
     let g:ycm_global_ycm_extra_conf = $HOME . '/.goe/ycm_extra_conf.py'
-    "let g:loaded_syntastic_c_gcc_checker = 1
-    "let g:syntastic_debug = 1
     "let g:syntastic_c_checkers = ['make', 'gcc', 'sparse', 'splint']
+
     " PHP语法检测工具
-    let g:syntastic_php_checkers = ['phpcs']
+    let g:syntastic_php_checkers = ['php']
+    "let g:syntastic_php_checkers = ['php','phpcs', 'phpmd']
+
     " JS语法检测工具
-    let g:syntastic_javascript_jshint_conf="/home/gbyukg/.jshintrc"
-    let g:syntastic_javascript_checkers = ['jshint']
-    "let g:syntastic_javascript_checkers = ['eslint']
+    "let g:syntastic_javascript_jshint_conf="/home/gbyukg/.jshintrc"
+    let g:syntastic_jshint_exec = $HOME . "/.npm/jshint/2.4.3/package/bin/jshint"
+    let g:syntastic_javascript_checkers = ['jshint', 'jslint', 'eslint']
+
+    " bash shell 语法检测工具
+    let g:syntastic_sh_exec = $HOME . "/.cabal/bin/shellcheck"
+    let g:syntastic_sh_checkers = ['shellcheck', 'sh']
+
+    " HTML,xHTML语法检测工具
+    let g:syntastic_javascript_checkers = ['jshint'] 
+" }
+
+" phpqa {
+    " Don't run messdetector on save (default = 1)
+    let g:phpqa_messdetector_autorun = 0
+
+    " Don't run codesniffer on save (default = 1)
+    let g:phpqa_codesniffer_autorun = 0
+
+    " Show code coverage on load (default = 0)
+    let g:phpqa_codecoverage_autorun = 0
 " }
 
 " PIV {

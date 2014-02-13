@@ -218,3 +218,14 @@ buffer列表
 `<C-S>`                     横屏打开buffer  
 `<C-T>`                     新TAB中打开buffer  
 
+[joonty/vim-phpqa](https://github.com/joonty/vim-phpqa)
+---
+####说明：
+整合了[PHP Code Sniffer](http://pear.php.net/package/PHP_CodeSniffer/redirected)和[phpmd](http://phpmd.org/)工具来检测PHP代码。
+
+####常用命令
+`:Php` - check for syntax errors
+`:Phpcs` - run code sniffer
+`:Phpmd` - run mess detector (will ask for a rule XML file if not set)
+`:Phpcc` - show code coverage (will ask for a clover XML file if not set)
+
