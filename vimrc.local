@@ -26,6 +26,9 @@ setlocal nospell
     inoremap <silent> <C-Left>      <Esc>:wincmd h<CR>
     inoremap <silent> <C-Right>     <Esc>:wincmd l<CR>
 
+    imap <S-Space> <Esc>
+    noremap <silent> <S-u>               :UndotreeToggle<CR>
+
     nmap <leader>bl :buffers<CR>
     nmap <leader>bw :bw<CR>
     noremap <silent> <A-RIGHT>   :bprevious<CR>
@@ -63,13 +66,15 @@ setlocal nospell
     endif
 " }
 
-" Autoformat {
+" Autoformat "https://github.com/Chiel92/vim-autoformat" {
     let g:formatprg_args_expr_cppatprg_php = "phpCB"
     let g:formatprg_args_expr_php = '"--space-after-if --space-after-switch --space-after-while --space-before-start-angle-bracket --space-after-end-angle-bracket --extra-padding-for-case-statement --one-true-brace-function-declaration --glue-amperscore --change-shell-comment-to-double-slashes-comment --force-large-php-code-tag --force-true-false-null-contant-lowercase --align-equal-statements --align-equal-statements-to-fixed-pos --comment-rendering-style PEAR %:p"'
     " 使用pg_format工具格式化SQL
     " :exe "1,$!pg_format %:p"
     let g:formatprg_sql = "pg_format"
     let g:formatprg_args_expr_sql = '"%:p"'
+    " javascript
+    let g:formatprg_args_expr_javascript= '"-f -s 4 %:p"'
 " }
 
 " syntastic {
@@ -80,7 +85,8 @@ setlocal nospell
     let g:syntastic_auto_loc_list = 1
     let g:syntastic_always_populate_loc_list=1 "Always put errors in the location list
     let g:syntastic_enable_balloons = 1
-    let g:syntastic_debug = 1
+    let g:syntastic_check_on_wq = 0          " donot check when :wq, :x and :ZZ
+    "let g:syntastic_debug = 1
     "let g:syntastic_check_on_open=1         " Always check when buffers are opened
 
     " C语法检测工具
@@ -94,15 +100,15 @@ setlocal nospell
 
     " JS语法检测工具
     "let g:syntastic_javascript_jshint_conf="/home/gbyukg/.jshintrc"
-    let g:syntastic_jshint_exec = $HOME . "/.npm/jshint/2.4.3/package/bin/jshint"
-    let g:syntastic_javascript_checkers = ['jshint', 'jslint', 'eslint']
+    let g:syntastic_jshint_exec = "jshint"
+    let g:syntastic_javascript_checkers = ['jshint']
 
     " bash shell 语法检测工具
-    let g:syntastic_sh_exec = $HOME . "/.cabal/bin/shellcheck"
+    "let g:syntastic_sh_exec = $HOME . "/.cabal/bin/shellcheck"
     let g:syntastic_sh_checkers = ['shellcheck', 'sh']
 
     " HTML,xHTML语法检测工具
-    let g:syntastic_javascript_checkers = ['jshint'] 
+    "let g:syntastic_javascript_checkers = ['jshint'] 
 " }
 
 " phpqa {
@@ -269,6 +275,11 @@ setlocal nospell
     let g:buffergator_viewport_split_policy = "T"
 " }
 
+" tagbar {
+    nnoremap <silent> <S-t> :TagbarToggle<CR>
+    let g:tagbar_autofocus = 1
+    let g:tagbar_show_visibility = 0
+" }
 :function ToggleWrap()
 : if (&wrap == 1)
 :   if (&linebreak == 0)
@@ -297,3 +308,5 @@ if has('gui_running')
     endif
 endif
 
+set exrc
+set secure

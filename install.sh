@@ -57,7 +57,11 @@ cd ~/.vim/bundle/YouCompleteMe
 # https://github.com/ggreer/the_silver_searcher
 
 # 安装phpCS
-php格式化工具
+#php格式化工具
+
+# phpCB php代码格式化工具
+# http://www.waterproof.fr/products/phpCodeBeautifier/
+# http://pear.php.net/package/PHP_Beautifier
 
 #安装js-beautify
 #http://github.com/einars/js-beautify
@@ -89,3 +93,8 @@ php格式化工具
 
 # shell 语法检测工具
 # https://github.com/koalaman/shellcheck
+
+# 通过快速启动栏启动gvim，使用的是base shall的环境变量，所有设定好环境变量后，同样需要设定好.profile
+
+# phpctags https://github.com/vim-php/phpctags
+# 

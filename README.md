@@ -110,7 +110,7 @@ session操作
 `<:25>`                                     跳转到第25跳结果上  
 `<:diffthis>`                               在打开多个文件时候将对比打开的前4个文件  
 
-[kien/ctrlp.vim](https://github.com/kien/ctrlp.vim)
+[tpope/vim-surround](https://github.com/tpope/vim-surround)
 ---------------------------------
 #####说明:  
 快速修改包围字符串的符号, 如引号、括号、html、xml标签等
@@ -127,7 +127,7 @@ session操作
 `cs[}`                                      将\[替换成{, 使用括号毕可以禁止输出空格  
 `yss)`                                      用括号将正好扩起来: ([ Hello ] World)  
 `ds[ds(`                                    删除\[\]和\(\): Hello World  
-`ysiw<em>`                                  结果为: `<em>Hello</em> world!`  
+`ys1w<em>`                                  结果为: `<em>Hello</em> world!`  
 `S<p class="important">`                    在visual模式下用指定输入的字符或标签扩主选定的字符  
 
 [mbbill/undotree](https://github.com/mbbill/undotree)
@@ -228,4 +228,12 @@ buffer列表
 `:Phpcs` - run code sniffer
 `:Phpmd` - run mess detector (will ask for a rule XML file if not set)
 `:Phpcc` - show code coverage (will ask for a clover XML file if not set)
+
+[duff/vim-bufonly](https://github.com/duff/vim-bufonly)
+---
+####说明
+关闭除当前buffer之外的所有buffer插件
+
+####常用命令
+`:BufOnly`
 

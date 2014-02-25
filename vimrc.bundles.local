@@ -101,8 +101,22 @@ Bundle "brookhong/cscope.vim"
     Bundle "kien/rainbow_parentheses.vim"
 " }
 
+" vim-php/tagbar-phpctags.vim{
+    Bundle "vim-php/tagbar-phpctags.vim"
+" }
+
 " taglist {
     " Bundle "vim-scripts/taglist.vim"
+" }
+
+" szw/vim-tags{
+    "Bundle "szw/vim-tags"
+    "Bundle "xolox/vim-misc"
+    "Bundle "xolox/vim-easytags"
+" }
+
+" duff/vim-bufonly {
+    Bundle "duff/vim-bufonly"
 " }
 
 " json format {
