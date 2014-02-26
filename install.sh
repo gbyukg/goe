@@ -64,11 +64,7 @@ cd ~/.vim/bundle/YouCompleteMe
 # http://pear.php.net/package/PHP_Beautifier
 
 #安装js-beautify
-#http://github.com/einars/js-beautify
-#首先需要安装 python的pip
-#sudo apt-get install python-pip
-#使用pip安装jsbeautifier
-#pip jsbeautifier
+# npm install -g js-beautify
 
 # C#,C++,C,Java格式化工具
 # sudo apt-get install astyle

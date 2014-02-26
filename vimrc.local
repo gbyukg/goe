@@ -73,8 +73,6 @@ setlocal nospell
     " :exe "1,$!pg_format %:p"
     let g:formatprg_sql = "pg_format"
     let g:formatprg_args_expr_sql = '"%:p"'
-    " javascript
-    let g:formatprg_args_expr_javascript= '"-f -s 4 %:p"'
 " }
 
 " syntastic {
