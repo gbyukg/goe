@@ -129,6 +129,18 @@ setlocal nospell
 " }
 
 " youcompleteme {
+    let g:ycm_semantic_triggers =  {
+        \   'c' : ['->', '.'],
+        \   'objc' : ['->', '.'],
+        \   'ocaml' : ['.', '#'],
+        \   'cpp,objcpp' : ['->', '.', '::'],
+        \   'perl' : ['->'],
+        \   'cs,java,javascript,d,vim,python,perl6,scala,vb,elixir,go' : ['.'],
+        \   'ruby' : ['.', '::'],
+        \   'lua' : ['.', ':'],
+        \   'erlang' : [':'],
+        \ }
+        " 关闭php 'php' : ['->', '::'],
 " }
 
 " UltiSnips{
@@ -241,9 +253,9 @@ setlocal nospell
 
 " VDebug {
     let g:vdebug_options = {}
-    let g:vdebug_options["break_on_open"] = 0
     let g:vdebug_options["debug_file"] = spf13_consolidated_directory . 'debug'
     let g:vdebug_keymap = {
+        \    "break_on_open" : 1,
         \    "set_breakpoint" : "<F1>",
         \    "close" : "<F3>",
         \    "detach" : "<F4>",
