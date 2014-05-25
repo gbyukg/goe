@@ -94,3 +94,5 @@ cd ~/.vim/bundle/YouCompleteMe
 
 # phpctags https://github.com/vim-php/phpctags
 # 
+iterm 主题
+https://github.com/mbadolato/iTerm2-Color-Schemes
