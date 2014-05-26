@@ -3,7 +3,7 @@
     Bundle 'altercation/vim-colors-solarized'
     Bundle 'flazz/vim-colorschemes'
     Bundle 'godlygeek/csapprox'
-    Bundle "daylerees/colour-schemes"
+    Bundle "daylerees/colour-schemes", { "rtp": "vim/" }
 " }
 
 " 目录树{
