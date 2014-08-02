@@ -9,7 +9,9 @@
 " 目录树{
     Bundle 'scrooloose/nerdtree'
     Bundle 'tyok/nerdtree-ack'
-    "Bundle 'jistr/vim-nerdtree-tabs'
+    " 为在git库下的nerdtree显示状态信息
+    Bundle 'Xuyuanp/git-nerdtree'
+    Bundle 'jistr/vim-nerdtree-tabs'
 " }
 
 " 文件、buffer、mub等文件搜索{
@@ -35,11 +37,11 @@ Bundle "brookhong/cscope.vim"
 " }
 
 " C++编写的强大的自动补充插件 {
-    Bundle "Valloric/YouCompleteMe"
+    "Bundle "Valloric/YouCompleteMe"
 " }
 
 " 代码片段补全工具{
-    Bundle "SirVer/ultisnips"
+    "Bundle "SirVer/ultisnips"
 " }
 
 " 通过使用+、-来扩充visual选择区域 {
@@ -126,6 +128,15 @@ Bundle "brookhong/cscope.vim"
 
 " joonty/vim-phpqa {
     Bundle "joonty/vim-phpqa"
+" }
+
+" yonchu/accelerated-smooth-scroll {
+" 平滑的显示<C-U>或<C-D>滚动画面
+    Bundle "yonchu/accelerated-smooth-scroll"
+" }
+
+" vim 访问远程文件 {
+    Bundle "vim-scripts/netrw.vim"
 " }
 
 Bundle "joonty/vdebug"

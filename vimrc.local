@@ -33,6 +33,8 @@ setlocal nospell
     nmap <leader>bw :bw<CR>
     noremap <silent> <A-RIGHT>   :bprevious<CR>
     noremap <silent> <A-LEFT> :bNext<CR>
+    noremap <silent> <Leader>z   :bprevious<CR>
+    noremap <silent> <Leader>x :bNext<CR>
     inoremap <silent> <A-RIGHT>   <Esc>:bprevious<CR>
     inoremap <silent> <A-LEFT> <Esc>:bNext<CR>
     nmap <leader>bb :Unite buffer<CR>
@@ -57,13 +59,28 @@ setlocal nospell
 " }
 
 " NERDTree {
+    nmap <silent> <C-e> :NERDTreeToggle<CR>
     "let g:nerdtree_tabs_open_on_gui_startup=1
     let g:NERDTreeChDirMode = 2
+    "let g:nerdtree_tabs_open_on_new_tab = 1
     if has('gui_running')
         if has("gui_gtk2")
             let NERDTreeQuitOnOpen=0
         endif
     endif
+    if has('gui_macvim')
+        let NERDTreeQuitOnOpen=0
+    endif
+" }
+
+" vim-indent-guides {
+    let g:indent_guides_enable_on_vim_startup = 1
+    let g:indent_guides_exclude_filetypes = ['help', 'nerdtree']
+    hi IndentGuidesOdd  ctermbg=black
+    hi IndentGuidesEven ctermbg=darkgrey
+    "let g:indent_guides_auto_colors = 0
+    "autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  guibg=red   ctermbg=3
+    "autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=green ctermbg=4
 " }
 
 " Autoformat "https://github.com/Chiel92/vim-autoformat" {
@@ -313,9 +330,31 @@ if has('gui_running')
         " 最大化窗口
         set lines=999 columns=999
     elseif has("gui_macvim")
-        set guifont=Andale\ Mono\ Regular:h14,Menlo\ Regular:h15,Consolas\ Regular:h16,Courier\ New\ Regular:h18
-        :color bensday "asu1dark asmdev nightshimmer asmdev navajo-night eclm_wombat darkslategray asmdev
+        set clipboard+=unnamed
+        set vb t_vb=
+        "set guioptions-=m  "no menu
+        "set guioptions-=T  "no toolbar
+        set guioptions-=l
+        set guioptions-=L
+        set guioptions-=r  "no scrollbar
+        set guioptions-=R
+
+        nmap <D-p> :CtrlP<CR>
+        nmap <D-r> :CtrlPBuffer<CR>
     endif
+        set guifont=Ayuthaya:h12,Andale\ Mono:h13,Source\ Code\ Pro\ for\ Powerline:h18,Menlo\ Regular:h13,Consolas\ Regular:h16,Courier\ New\ Regular:h18
+        let macvim_skip_colorscheme=1
+        let g:molokai_original=1
+        colorscheme molokai
+        highlight SignColumn guibg=#272822       "let g:rehash256 = 1
+        " 最大化窗口
+        set lines=999 columns=999
+        "set transparency=0
+        "set linespace=2
+        "set background=dark
+        "colorscheme solarized
+        ":color solarized fruity bensday asu1dark asmdev nightshimmer asmdev navajo-night eclm_wombat darkslategray asmdev
+        "let g:molokai_original = 1
 endif
 
 set exrc

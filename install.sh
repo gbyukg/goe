@@ -65,6 +65,8 @@ cd ~/.vim/bundle/YouCompleteMe
 
 #安装js-beautify
 # npm install -g js-beautify
+#js 语法检测工具
+#https://github.com/jshint/jshint
 
 # C#,C++,C,Java格式化工具
 # sudo apt-get install astyle
