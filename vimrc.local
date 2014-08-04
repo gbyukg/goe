@@ -336,11 +336,14 @@ if has('gui_running')
         "set guioptions-=T  "no toolbar
         set guioptions-=l
         set guioptions-=L
-        set guioptions-=r  "no scrollbar
+        "set guioptions-=r  "no scrollbar
         set guioptions-=R
 
         nmap <D-p> :CtrlP<CR>
         nmap <D-r> :CtrlPBuffer<CR>
+
+        map <D-/> <plug>NERDCommenterToggle
+        map <D-C-/> <plug>NERDCommenterSexy
     endif
         set guifont=Ayuthaya:h12,Andale\ Mono:h13,Source\ Code\ Pro\ for\ Powerline:h18,Menlo\ Regular:h13,Consolas\ Regular:h16,Courier\ New\ Regular:h18
         let macvim_skip_colorscheme=1
@@ -349,7 +352,7 @@ if has('gui_running')
         highlight SignColumn guibg=#272822       "let g:rehash256 = 1
         " 最大化窗口
         set lines=999 columns=999
-        "set transparency=0
+        set transparency=5
         "set linespace=2
         "set background=dark
         "colorscheme solarized
