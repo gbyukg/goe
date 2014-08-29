@@ -1,5 +1,6 @@
 vim/backups
 vim/bundle
 vim/sessions
-ycm_extra_conf.pyc
+.ycm_extra_conf.pyc
 .ropeproject
+node_modules/

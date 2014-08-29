@@ -105,7 +105,7 @@ setlocal nospell
 
     " C语法检测工具
     let g:syntastic_c_checkers = ['gcc']    " Use gcc as default syntax checker"
-    let g:ycm_global_ycm_extra_conf = $HOME . '/.goe/ycm_extra_conf.py'
+    let g:ycm_global_ycm_extra_conf = $HOME . '/.goe/.ycm_extra_conf.py'
     "let g:syntastic_c_checkers = ['make', 'gcc', 'sparse', 'splint']
 
     " PHP语法检测工具
@@ -300,6 +300,9 @@ setlocal nospell
 " vim-buffergator{
     let g:buffergator_viewport_split_policy = "T"
 " }
+
+" Rip-Rip/clang_complete 设定libclang库路径
+let g:clang_library_path='/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/'
 
 " tagbar {
     nnoremap <silent> <S-t> :TagbarToggle<CR>
