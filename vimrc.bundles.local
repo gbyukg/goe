@@ -53,7 +53,7 @@ Bundle "brookhong/cscope.vim"
 " }
 
 " 类似CtrlP的搜索工具{
-    Bundle "Shougo/unite.vim"
+    "Bundle "Shougo/unite.vim"
 " }
 
 " session管理工具{
@@ -131,18 +131,26 @@ Bundle "brookhong/cscope.vim"
 " }
 
 " yonchu/accelerated-smooth-scroll {
-" 平滑的显示<C-U>或<C-D>滚动画面
-    Bundle "yonchu/accelerated-smooth-scroll"
+    " 平滑的显示<C-U>或<C-D>滚动画面
+    " Bundle "yonchu/accelerated-smooth-scroll"
 " }
 
 " vim 访问远程文件 {
     Bundle "vim-scripts/netrw.vim"
 " }
 
+" vim mark插件 kshenoy/vim-signature {
+    Bundle "kshenoy/vim-signature"
+" }
+
+" C/C++ 编译Rip-Rip/clang_complete{
+    Bundle "Rip-Rip/clang_complete"
+" }
+
 Bundle "joonty/vdebug"
 Bundle 'bling/vim-bufferline'
-Bundle "jeetsukumaran/vim-buffergator"
 
+" Bundle "jeetsukumaran/vim-buffergator"
 " Bundle "techlivezheng/vim-plugin-minibufexpl"
 " Bundle "garbas/vim-snipmate.git"
 " Bundle "vim-scripts/bufexplorer.zip"

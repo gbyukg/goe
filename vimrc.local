@@ -35,9 +35,8 @@ setlocal nospell
     noremap <silent> <A-LEFT> :bNext<CR>
     noremap <silent> <Leader>z   :bprevious<CR>
     noremap <silent> <Leader>x :bNext<CR>
-    inoremap <silent> <A-RIGHT>   <Esc>:bprevious<CR>
-    inoremap <silent> <A-LEFT> <Esc>:bNext<CR>
-    nmap <leader>bb :Unite buffer<CR>
+
+    nmap <C-X> :BufOnly<CR>
 
     nmap <silent> <C-p> :CtrlP<CR>
     nmap <silent> <C-b> :CtrlPBuffer<CR>
@@ -339,11 +338,6 @@ if has('gui_running')
         "set guioptions-=r  "no scrollbar
         set guioptions-=R
 
-        nmap <D-p> :CtrlP<CR>
-        nmap <D-r> :CtrlPBuffer<CR>
-
-        map <D-/> <plug>NERDCommenterToggle
-        map <D-C-/> <plug>NERDCommenterSexy
     endif
         set guifont=Ayuthaya:h12,Andale\ Mono:h13,Source\ Code\ Pro\ for\ Powerline:h18,Menlo\ Regular:h13,Consolas\ Regular:h16,Courier\ New\ Regular:h18
         let macvim_skip_colorscheme=1

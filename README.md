@@ -66,9 +66,28 @@ gf	 open in the same window ("goto file")
 <c-w>f	 open in a new window (Ctrl-w f)  
 <c-w>gf	 open in a new tab (Ctrl-w gf)  
 
-**comment**  
-`<command-/>`  
-`<command-control-/>`  
+        m[a-zA-Z]    : Toggle mark
+          m,           : Place the next available mark
+          m.           : If no mark on line, place the next available mark. Otherwise, remove (first) existing mark.
+          m-           : Delete all marks from the current line
+          m<Space>     : Delete all marks from the current buffer
+          ]`           : Jump to next mark
+          [`           : Jump to prev mark
+          ]'           : Jump to start of next line containing a mark
+          ['           : Jump to start of prev line containing a mark
+          `]           : Jump by alphabetical order to next mark
+          `[           : Jump by alphabetical order to prev mark
+          ']           : Jump by alphabetical order to start of next line containing a mark
+          '[           : Jump by alphabetical order to start of prev line containing a mark
+          '?           : Open location list and display local marks
+
+          m[0-9]       : Toggle the corresponding marker !@#$%^&*()
+          m<S-[0-9]>   : Remove all markers of the same type
+          ]-           : Jump to next line having same marker
+          [-           : Jump to prev line having same marker
+          ]=           : Jump to next line having any marker
+          [=           : Jump to prev line having any marker
+          m<BackSpace> : Remove all markers
 
 插件注释
 ===============================================
