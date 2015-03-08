@@ -39,8 +39,8 @@ setlocal nospell
     nmap <C-X> :BufOnly<CR>
 
     nmap <silent> <C-p> :CtrlP<CR>
-    nmap <silent> <C-b> :CtrlPBuffer<CR>
-    nmap <silent> <C-m> :CtrlPMRU<CR>
+    nmap <silent> <leader>b :CtrlPBuffer<CR>
+    nmap <silent> <leader>m :CtrlPMRU<CR>
 
     noremap <leader>f :Autoformat<CR><CR>
 
@@ -294,11 +294,15 @@ setlocal nospell
     " 只显示当前目录下的最近打开过的文件
     let g:ctrlp_mruf_relative = 1
     let g:ctrlp_prompt_mappings = { 'ToggleMRURelative()': ['<F3>'] }
-    unmap <CR>
+    "unmap <CR>
 " }
 
 " vim-buffergator{
     let g:buffergator_viewport_split_policy = "T"
+" }
+
+" fholgado/minibufexpl.vim {
+    "hi MBEChanged guibg=darkblue ctermbg=darkblue termbg=white
 " }
 
 " Rip-Rip/clang_complete 设定libclang库路径
@@ -323,6 +327,9 @@ let g:clang_library_path='/Applications/Xcode.app/Contents/Developer/Toolchains/
 :endfunction
 map <F6> :call ToggleWrap()<CR>
 
+" if has("gui_macvim") && !has("gui_vimr")    " for MacVim only stuff
+" if has("gui_macvim")    " for MacVim and VimR
+" if has("gui_vimr")    " for VimR only stuff
 " 设置gvim字体与主题
 if has('gui_running')
     if has("gui_gtk2")

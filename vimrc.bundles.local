@@ -22,11 +22,8 @@
     Bundle 'mbbill/undotree'
 " }
 
-" 快速修改指定字符串的包围符号{
-    Bundle 'tpope/vim-surround'
-" }
-
 Bundle "brookhong/cscope.vim"
+"Bundle "chazy/cscope_maps"
 
 " 打开空白页显示一些最近打开文件信息等{
     Bundle "mhinz/vim-startify"
@@ -132,7 +129,7 @@ Bundle "brookhong/cscope.vim"
 
 " yonchu/accelerated-smooth-scroll {
     " 平滑的显示<C-U>或<C-D>滚动画面
-    " Bundle "yonchu/accelerated-smooth-scroll"
+     Bundle "yonchu/accelerated-smooth-scroll"
 " }
 
 " vim 访问远程文件 {
@@ -148,24 +145,26 @@ Bundle "brookhong/cscope.vim"
 " }
 
 Bundle "joonty/vdebug"
-Bundle 'bling/vim-bufferline'
+"Bundle 'bling/vim-bufferline'
 
 " Bundle "jeetsukumaran/vim-buffergator"
 " Bundle "techlivezheng/vim-plugin-minibufexpl"
 " Bundle "garbas/vim-snipmate.git"
 " Bundle "vim-scripts/bufexplorer.zip"
 " Bundle 'vim-scripts/sessionman.vim'
+Bundle 'fholgado/minibufexpl.vim'
 
 " 括号、引号等自动不全{
     " Gvim 中只能使用AutoClose, 否则无法输入中文
-    if has('gui_running')
-        if has("gui_gtk2")
-            Bundle "vim-scripts/AutoClose"
-        endif
-    else
-        Bundle 'spf13/vim-autoclose'
-        " Bundle "Townk/vim-autoclose"
-    endif
+    Bundle 'spf13/vim-autoclose'
+    "if has('gui_running')
+        "if has("gui_gtk2")
+            "Bundle "vim-scripts/AutoClose"
+        "endif
+    "else
+        "Bundle 'spf13/vim-autoclose'
+        "" Bundle "Townk/vim-autoclose"
+    "endif
 " }
 
 if (has("python") || has("python3")) && exists('g:spf13_use_powerline') && !exists('g:spf13_use_old_powerline')
