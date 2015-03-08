@@ -1,0 +1,260 @@
+
+Bundle "Xuyuanp/git-nerdtree"
+
+" 通过键盘更加快速移动光标{
+	" Bundle "vim-easymotion"
+" }
+
+" 打开空白页显示一些最近打开文件信息等{
+    Bundle "mhinz/vim-startify"
+" }
+
+" 通过使用+、-来扩充visual选择区域 {
+    Bundle "terryma/vim-expand-region"
+" }
+
+" 自动为语句添加结束标志{
+    Bundle "tpope/vim-endwise.git"
+" }
+
+" 同时处理查找出的多出相同字符串 {}
+    Bundle 'terryma/vim-multiple-cursors'
+" }
+
+" 在行号之前显示文件改动信息{
+    Bundle 'mhinz/vim-signify'
+" }
+
+" 括号高亮 {
+    Bundle "kien/rainbow_parentheses.vim"
+" }
+
+" vim 访问远程文件 {
+    Bundle "vim-scripts/netrw.vim"
+" }
+
+" yonchu/accelerated-smooth-scroll {
+    " 平滑的显示<C-U>或<C-D>滚动画面
+     Bundle "yonchu/accelerated-smooth-scroll"
+" }
+
+" 自动补全引号, 括号 {
+	Bundle 'spf13/vim-autoclose'
+" }
+
+" joonty/vim-phpqa {
+    Bundle "joonty/vim-phpqa"
+" }
+
+" C++编写的强大的自动补充插件 {
+    Bundle "Valloric/YouCompleteMe"
+" }
+
+" 自动完成插件{
+    Bundle "SirVer/ultisnips"
+"}
+
+" 代码片段{
+	Bundle "honza/vim-snippets"
+"}
+
+" 格式化代码工具{
+    Bundle "Chiel92/vim-autoformat"
+" }
+
+" {
+	Bundle "Shougo/vimproc.vim"
+	Bundle "Shougo/vimshell.vim"
+"}
+
+" NERDTree {
+    map <C-e> <plug>NERDTreeTabsToggle<CR>
+    nmap <silent> <C-e> :NERDTreeToggle<CR>
+    map <leader>e :NERDTreeFind<CR>
+    nmap <leader>nt :NERDTreeFind<CR>
+
+    let NERDTreeShowBookmarks=1
+    let NERDTreeIgnore=['\.pyc', '\~$', '\.swo$', '\.swp$', '\.git', '\.hg', '\.svn', '\.bzr']
+    let NERDTreeChDirMode=0
+    let NERDTreeQuitOnOpen=1
+    let NERDTreeMouseMode=2
+    let NERDTreeShowHidden=1
+    let NERDTreeKeepTreeInNewTab=1
+    let g:nerdtree_tabs_open_on_gui_startup=0
+
+    "let g:nerdtree_tabs_open_on_gui_startup=1
+    let g:NERDTreeChDirMode = 2
+    "let g:nerdtree_tabs_open_on_new_tab = 1
+    if has('gui_running')
+        if has("gui_gtk2")
+            let NERDTreeQuitOnOpen=0
+        endif
+    endif
+    if has('gui_macvim')
+        let NERDTreeQuitOnOpen=0
+    endif
+" }
+
+" vim-indent-guides {
+    let g:indent_guides_enable_on_vim_startup = 1
+    let g:indent_guides_exclude_filetypes = ['help', 'nerdtree']
+    hi IndentGuidesOdd  ctermbg=black
+    hi IndentGuidesEven ctermbg=darkgrey
+    "let g:indent_guides_auto_colors = 0
+    "autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  guibg=red   ctermbg=3
+    "autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=green ctermbg=4
+" }
+
+" Autoformat "https://github.com/Chiel92/vim-autoformat" {
+    let g:formatprg_args_expr_cppatprg_php = "phpCB"
+    let g:formatprg_args_expr_php = '"--space-after-if --space-after-switch --space-after-while --space-before-start-angle-bracket --space-after-end-angle-bracket --extra-padding-for-case-statement --one-true-brace-function-declaration --glue-amperscore --change-shell-comment-to-double-slashes-comment --force-large-php-code-tag --force-true-false-null-contant-lowercase --align-equal-statements --align-equal-statements-to-fixed-pos --comment-rendering-style PEAR %:p"'
+    " 使用pg_format工具格式化SQL
+    " :exe "1,$!pg_format %:p"
+    let g:formatprg_sql = "pg_format"
+    let g:formatprg_args_expr_sql = '"%:p"'
+" }
+
+" syntastic {
+    " 行号左边状态栏错误标志
+    let g:syntastic_enable_signs=1
+    let g:syntastic_error_symbol='✗'
+    let g:syntastic_warning_symbol='⚠'
+    let g:syntastic_auto_loc_list = 1
+    let g:syntastic_always_populate_loc_list=1 "Always put errors in the location list
+    let g:syntastic_enable_balloons = 1
+    let g:syntastic_check_on_wq = 0          " donot check when :wq, :x and :ZZ
+    "let g:syntastic_debug = 1
+    "let g:syntastic_check_on_open=1         " Always check when buffers are opened
+
+    " C语法检测工具
+    let g:syntastic_c_checkers = ['gcc']    " Use gcc as default syntax checker"
+    let g:ycm_global_ycm_extra_conf = $HOME . '/.goe/.ycm_extra_conf.py'
+    "let g:syntastic_c_checkers = ['make', 'gcc', 'sparse', 'splint']
+
+    " PHP语法检测工具
+    let g:syntastic_php_checkers = ['php']
+    "let g:syntastic_php_checkers = ['php','phpcs', 'phpmd']
+
+    " JS语法检测工具
+    "let g:syntastic_javascript_jshint_conf="/home/gbyukg/.jshintrc"
+    let g:syntastic_jshint_exec = "jshint"
+    let g:syntastic_javascript_checkers = ['jshint']
+
+    " bash shell 语法检测工具
+    "let g:syntastic_sh_exec = $HOME . "/.cabal/bin/shellcheck"
+    let g:syntastic_sh_checkers = ['shellcheck', 'sh']
+
+    " HTML,xHTML语法检测工具
+    "let g:syntastic_javascript_checkers = ['jshint']
+" }
+
+" phpqa {
+    " Don't run messdetector on save (default = 1)
+    let g:phpqa_messdetector_autorun = 0
+
+    " Don't run codesniffer on save (default = 1)
+    let g:phpqa_codesniffer_autorun = 0
+
+    " Show code coverage on load (default = 0)
+    let g:phpqa_codecoverage_autorun = 0
+" }
+
+" 替代exvim/ex-minibufexpi {
+    " 关闭minibufexpi
+    if has('gui_running')
+        let g:buftabline_show = 2
+    else
+        let g:buftabline_show = 0
+    endif
+    Bundle "ap/vim-buftabline"
+    nnoremap <leader>z :bprev<cr>
+    nnoremap <leader>x :bnext<cr>
+" }
+
+" duff/vim-bufonly {
+    Bundle "duff/vim-bufonly"
+" }
+
+" minibufexpl{
+" if has('gui_running')
+        " let g:miniBufExplorerAutoStart = 1
+    " else
+        " let g:miniBufExplorerAutoStart = 0
+    " endif
+" }
+
+" vim-airline{
+    "let g:airline#extensions#tabline#buffer_min_count = 0
+    "let g:airline_symbols = {}
+    let g:airline_left_sep = '⮀'
+    let g:airline_left_alt_sep = '⮁'
+    let g:airline_right_sep = '⮂'
+    let g:airline_right_alt_sep = '⮃'
+    let g:airline_symbols.branch = '⭠'
+    let g:airline_symbols.readonly = '⭤'
+    let g:airline_symbols.linenr = '⭡'
+    let g:airline_theme='powerlineish'
+    " let g:airline_theme='murmur'
+    " let g:airline_theme='bubblegum'
+"}
+
+" youcompleteme {
+	let g:clang_library_path = '/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/'
+	let g:ycm_extra_conf_globlist = $HOME . '/exvim/.ycm_extra_conf.py'
+	nnoremap <leader>jd :YcmCompleter GoToDefinitionElseDeclaration<CR>   "按,jd 会跳转到定义
+	let g:ycm_confirm_extra_conf=0    "打开vim时不再询问是否加载ycm_extra_conf.py配置
+	let g:ycm_collect_identifiers_from_tag_files = 1 "使用ctags生成的tags文件
+    let g:ycm_semantic_triggers =  {
+        \   'c' : ['->', '.'],
+        \   'objc' : ['->', '.'],
+        \   'ocaml' : ['.', '#'],
+        \   'cpp,objcpp' : ['->', '.', '::'],
+        \   'perl' : ['->'],
+        \   'cs,java,javascript,d,vim,python,perl6,scala,vb,elixir,go' : ['.'],
+        \   'ruby' : ['.', '::'],
+        \   'lua' : ['.', ':'],
+        \   'erlang' : [':'],
+        \ }
+        " 关闭php 'php' : ['->', '::'],
+" }
+
+" UltiSnips{
+    " UltiSnips completion function that tries to expand a snippet. If there's no
+    " snippet for expanding, it checks for completion window and if it's
+    " shown, selects first element. If there's no completion window it tries to
+    " jump to next placeholder. If there's no placeholder it just returns TAB key 
+    function! g:UltiSnips_Complete()
+        call UltiSnips_ExpandSnippet()
+        if g:ulti_expand_res == 0
+            if pumvisible()
+                return "\<C-n>"
+                "return "\<Enter>"
+            else
+                call UltiSnips_JumpForwards()
+                if g:ulti_jump_forwards_res == 0
+                   return "\<TAB>"
+                endif
+            endif
+        endif
+        return ""
+    endfunction
+
+    au BufEnter * exec "inoremap <silent> " . g:UltiSnipsExpandTrigger . " <C-R>=g:UltiSnips_Complete()<cr>"
+    let g:UltiSnipsJumpForwardTrigger="<tab>"
+    let g:UltiSnipsExpandTrigger="<C-e>"
+" }
+
+" undotree {"
+    if has('persistent_undo')
+        let undo_dir = $HOME . '/.data/vimundo'
+        exec "set undodir=" . undo_dir
+        set undofile                " So is persistent undo ...
+        set undolevels=1000         " Maximum number of changes that can be undone
+        set undoreload=10000        " Maximum number lines to save for undo on a buffer reload
+
+        if finddir(undo_dir) == ''
+           silent call mkdir(undo_dir)
+        endif
+    endif
+"}
+

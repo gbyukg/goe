@@ -1,3 +1,0 @@
-let mapleader=","
-注释工具
-https://github.com/tomtom/tcomment_vim
